@@ -10,7 +10,7 @@ const Footer = React.lazy(() => import('./containers/layout/Footer/Footer').then
 function App() {
   return (
     <>
-    <Suspense fallback={<div>Carregando...</div>}>
+    <Suspense fallback={<div>Carregando....</div>}>
       <Header />
       <div id='body'>
         <main id='main'>
