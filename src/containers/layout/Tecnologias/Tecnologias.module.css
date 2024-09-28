@@ -1,0 +1,397 @@
+.tecnologias{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    /*animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 35% cover 40%;*/
+}
+/*@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}*/
+.left_tecnologias{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.left_tecnologias h2{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 3.7rem;
+    font-weight: 700;
+    color: #0F2650;
+    margin-bottom: 5rem;
+}
+#tecnologias_img_481{
+    display: none;
+}
+.tecnologias_container{
+    font-weight: 700;
+    font-size: 1.3rem;
+    gap: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tecnologias_description {
+    display: flex;
+    flex-direction: column;
+    width: 52%;
+}
+.tecnologias_description p{
+    margin-top: 1.25rem;
+    color: #000000;
+    text-align: justify;
+}
+.tecnologias_slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+.tecnologias_slider svg {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: 1px solid #01CFC9;
+    font-size: 2rem;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 0rem 0.6rem;
+    transition: 0.3s;
+}
+.swiper .tecnologias_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.swiper .tecnologia{
+    background-color: #FFFFFF;
+    width: 15rem;
+    max-height: 19rem;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    word-wrap: break-word;
+    border: 1px solid #01CFC9;
+    gap: 0.5rem;
+    padding: 1rem 3.5rem 4rem 3.5rem;
+    transition: max-height 0.6s ease, background-color 0.6s ease, border-color 0.6s ease;
+}
+.tecnologia:hover{
+    max-height: 40rem;
+    background-color: #000000;
+    border: 1px solid #ffffff;
+}
+.tecnologia img{
+    width: 123px;
+    height: 100px;
+    margin-top: 1.5rem;
+}
+.tecnologia h4{
+    font-size: 1.3rem;
+    color: #0F2650;
+}
+.tecnologia_description{
+    font-size: 1rem;
+    color: #000000;
+    overflow: hidden;
+    text-align: justify;
+}
+.tecnologia_content{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 1rem;
+}
+#mais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+#mais svg{
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: #000000;
+    border: none;
+    margin: 0;
+}
+#tecnologias_img{
+    height: 50%;
+    padding: 17rem 16.3rem;
+    background-color: #000000;
+    border-radius: 115px;
+    margin-top: 1rem;
+}
+.tecnologia:hover h4{
+    color: #01CFC9;
+}
+.tecnologia:hover .tecnologia_content{
+    color: #FFFFFF;
+}
+.tecnologia:hover .tecnologia_description{
+    color: #FFFFFF;
+}
+.tecnologia:hover #mais {
+    color: #FFFFFF;
+}
+.tecnologia:hover #mais svg{
+    color: #FFFFFF;
+    transform: rotate(-180deg);
+}
+
+.swiper {
+    width: 100%;
+    transition: 0.5s;
+    display: flex;
+}
+.swiper-pagination{
+    padding-bottom: 2rem;
+}
+.slider-controler{
+    height: 50%;
+    width: 100%;
+}
+.swiper-button-next svg{
+    height: 2rem;
+    width: 2rem;
+    color: #01CFC9;
+}
+
+.swiper-slide {
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 480px) {
+    .tecnologias{
+        animation-range: entry 25% cover 30%;
+    }
+    .left_tecnologias h2{
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+    .tecnologias_container{
+        gap: 0rem;
+    }
+    .tecnologias_description{
+        width: 100%;
+        font-size: 1.1rem;
+        p{
+            margin-top: 2rem;
+        }
+    }
+    .tecnologias_slider svg{
+        font-size: 2.5rem;
+        margin: 0rem 0rem;
+    }
+    .swiper .tecnologia{
+        max-height: 16.5rem;
+        padding: 1rem 1.5rem 2rem 1.5rem;
+    }
+    .tecnologia:hover{
+        max-height: 60rem;
+    }
+    .tecnologia img{
+        margin-top: 0.5rem;
+    }
+    .tecnologia_description{
+        width: 100%;
+    }
+    #tecnologias_img_481{
+        display: flex;
+        justify-content: center;
+        background-color: #000000;
+        border-radius: 12px;
+    }
+    #tecnologias_img{
+        display: none;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .tecnologias{
+        animation-range: entry 25% cover 30%;
+    }
+    .left_tecnologias h2{
+        margin-bottom: 2rem;
+        font-size: 2.8rem;
+    }
+    .tecnologias_container{
+        gap: 0rem;
+    }
+    .tecnologias_description{
+        width: 100%;
+        font-size: 1.1rem;
+        p{
+            margin-top: 2rem;
+        }
+    }
+    .tecnologias_slider svg{
+        margin: 0rem 0.1rem;
+    }
+    .swiper .tecnologia{
+        max-height: 16.5rem;
+        padding: 1rem 1.5rem 2rem 1.5rem;
+    }
+    .tecnologia:hover{
+        max-height: 60rem;
+    }
+    .tecnologia img{
+        margin-top: 0.5rem;
+    }
+    .tecnologia_description{
+        width: 100%;
+    }
+    #tecnologias_img_481{
+        display: flex;
+        justify-content: center;
+        background-color: #000000;
+        border-radius: 12px;
+    }
+    #tecnologias_img{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .tecnologias{
+        animation-range: entry 25% cover 30%;
+    }
+    .left_tecnologias h2{
+        margin-top: -5rem;
+        margin-bottom: 4rem;
+        font-size: 2.8rem;
+    }
+    .tecnologias_container{
+        gap: 2rem;
+    }
+    .tecnologias_description{
+        width: 50%;
+        font-size: 1.1rem;
+    }
+    .tecnologias_slider svg{
+        margin: 0rem 0.1rem;
+    }
+    .swiper .tecnologia{
+        max-height: 16.5rem;
+        padding: 1rem 1.5rem 2rem 1.5rem;
+    }
+    .tecnologia:hover{
+        max-height: 60rem;
+    }
+    .tecnologia img{
+        margin-top: 0.5rem;
+    }
+    .tecnologia_description{
+        width: 100%;
+    }
+    #tecnologias_img{
+        padding: 15rem 7rem;
+        margin-right: 1rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .left_tecnologias h2{
+        margin-top: -4rem;
+        margin-bottom: 4rem;
+        font-size: 3rem;
+    }
+    .tecnologias_container{
+        gap: 2rem;
+    }
+    .tecnologias_description{
+        width: 50%;
+        font-size: 1.1rem;
+    }
+    #tecnologias_img{
+        padding: 15rem 7rem;
+        margin-right: 2rem;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+    .tecnologias{
+        gap: 8rem;
+        animation-range: entry 10% cover 30%
+    }
+    .tecnologias_container{
+        gap: 3rem;
+    }
+    #tecnologias_img{
+        padding: 11.7rem 11rem;
+    }
+    #tecnologias_description ul{
+        margin-top: 1.5rem;
+        gap: 2rem;
+    }
+    .tecnologia{
+        width: 100%;
+    }
+    .tecnologias_slider svg{
+        margin: 0rem 1rem;
+    }
+    #tecnologias_img{
+        padding: 16rem 12.3rem;
+    }
+}
+@media (min-width: 1441px) and (max-width: 1600px) {
+
+}
+@media (min-width: 1921px) and (max-width: 2560px) {
+    .tecnologias{
+        padding: 3rem 0rem 8rem 0rem;
+        animation-range: entry 42% cover 42%;
+    }
+    .left_tecnologias h2{
+        margin-top: 3rem;
+        font-size: 4.8rem;
+    }
+    .tecnologias_container{
+        font-size: 1.9rem;
+    }
+    .tecnologias_slider{
+        margin-top: 3rem;
+    }
+    .tecnologias_slider svg{
+        font-size: 3.2rem;
+    }
+    .swiper .tecnologia{
+        max-height: 24rem;
+    }
+    .tecnologia:hover{
+        max-height: 45rem;
+    }
+    .tecnologia img{
+        width: 200px;
+        height: 200px;
+        margin-top: 1rem;
+    }
+    .tecnologia h4{
+        font-size: 2rem;
+    }
+    #mais{
+        font-size: 1.7rem;
+    }
+    .tecnologia_content{
+        font-size: 1.5rem;
+    }
+    #mais svg{
+        font-size: 1.5rem;
+    }
+    #tecnologias_img{
+        padding: 20rem 19.3rem;
+    }
+}
