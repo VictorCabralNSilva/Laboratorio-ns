@@ -241,7 +241,6 @@
     }
     #footer_instagram_li:hover::before{
         content: '';
-        background-image: url(../../../assets/Foto-Insta-Menor.webp);
         background-size: cover;
         background-position: center center;
         background-color: #9b9b9b;
@@ -329,7 +328,6 @@
     }
     #footer_instagram_li:hover::before{
         content: '';
-        background-image: url(../../../assets/Foto-Insta-Menor.webp);
         background-size: cover;
         background-position: center center;
         background-color: #9b9b9b;
@@ -411,7 +409,6 @@
     }
     #footer_instagram_li:hover::before{
         content: '';
-        background-image: url(../../../assets/Foto-Insta-Menor.webp);
         background-size: cover;
         background-position: center center;
         background-color: #9b9b9b;
