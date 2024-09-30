@@ -10,9 +10,9 @@ export function Inicio() {
         <section className={styles.inicio} id="inicio">
               <div id={styles.left_inicio}>  
                 <header id={styles.header_inicio}>
-                    <h1>Beleza
-                    Naturalidade
-                    Tecnologia</h1>
+                    <h1>Beleza</h1>
+                    <h1>Naturalidade</h1>
+                    <h1>Tecnologia</h1>
                 </header>
                 <article id={styles.main_inicio}>
                     <div id={styles.inicio_img_481}><img src={Logofooter} alt="" loading="lazy" /></div>

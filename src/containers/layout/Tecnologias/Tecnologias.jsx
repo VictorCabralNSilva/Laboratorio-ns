@@ -105,7 +105,7 @@ export function Tecnologias() {
                         <div className={styles.tecnologias_content}>
                         {tecnologias.map((tecnologia) => (
                         <SwiperSlide key={tecnologia.id} className={styles.tecnologia}>
-                          <img src={Logoheader} loading="lazy" alt={tecnologia.alt} />
+                          <img src={Logoheader} loading="eager" alt={tecnologia.alt} />
                           <div className={styles.tecnologia_title}>
                           <h4>{tecnologia.title}</h4>
                           </div>

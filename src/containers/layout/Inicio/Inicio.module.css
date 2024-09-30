@@ -20,10 +20,10 @@
     display: none;
 }
 #main_inicio{
-    font-weight: 700;
-    font-size: 1.3rem;
     display: flex;
     flex-direction: column;
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 #main_inicio p{
     text-align: justify;
