@@ -42,7 +42,7 @@ export function Servicos() {
           gsap.to(boxRef.current, { duration: 1, y: 10, opacity: 0.2 });
         }
       });
-    }, { threshold: 0.5 }); // Ajuste o threshold conforme necessário
+    }, { threshold: 0.3 }); // Ajuste o threshold conforme necessário
 
     if (boxRef.current) {
       observer.observe(boxRef.current);
