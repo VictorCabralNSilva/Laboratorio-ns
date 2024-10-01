@@ -45,6 +45,7 @@
     }
     #main{
         padding-top: 10rem;
+        gap: 8rem;
     }
 }
 @media (min-width: 1441px) and (max-width: 1600px) {

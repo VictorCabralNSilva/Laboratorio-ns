@@ -70,9 +70,11 @@
     border: 1px solid #FFFFFF;
 }
 .servico_img{
-    width: 89px;
     height: 89px;
     margin-top: 2rem;
+    object-fit: cover;
+    flex-shrink: 0;
+    flex-grow: 0;
     background-color: #B7ECEA;
     border-radius: 12px;
 }
@@ -81,6 +83,7 @@
     color: #0F2650;
 }
 .servico_description{
+    width: 100%;
     font-size: 1rem;
     color: #000000;
     overflow: hidden;
@@ -233,8 +236,8 @@
         animation-range: entry 10% cover 30%
     }
     .servico_img{
-        width: 200px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
     }
     .servico_title{
         font-size: 2rem;
