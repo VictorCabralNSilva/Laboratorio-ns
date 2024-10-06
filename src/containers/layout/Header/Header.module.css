@@ -616,21 +616,21 @@
         margin: auto 9.2rem;
     }
     .menu{
-        gap: 3rem;
+        gap: 5rem;
     }
     .menu li a{
         font-size: 2rem;
-        padding: 2.1rem 3rem;
+        padding: 2.25rem 3rem;
     }
     .logo{
         display: flex;
         align-items: center;
         width: 232px;
-        height: 190px;
+        height: 140px;
         img{
             margin-top: 1rem;
-            width: 282px;
-            height: 240px;
+            width: 232px;
+            height: 180px;
         }
     }
     .clicado{

@@ -37,6 +37,7 @@
     }
     #main{
         padding-top: 3rem;
+        gap: 17rem;
     }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
@@ -59,6 +60,7 @@
         margin: auto 11.8rem;
     }
     #main{
-        padding-top: 16rem;
+        padding-top: 20rem;
+        gap: 10rem;
     }
 }

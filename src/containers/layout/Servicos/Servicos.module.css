@@ -62,7 +62,7 @@
     border: 1px solid #01CFC9;
     gap: 1.2rem;
     padding: 1rem 3.5rem 3.5rem 3.5rem;
-    transition: max-height 0.6s ease, background-color 0.6s ease, border-color 0.6s ease;
+    transition: max-height 0.5s ease, background-color 0.6s ease, border-color 0.6s ease;
 }
 .servico:hover{
     max-height: 40rem;
@@ -71,7 +71,7 @@
 }
 .servico_img{
     height: 89px;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     object-fit: cover;
     flex-shrink: 0;
     flex-grow: 0;
@@ -79,14 +79,16 @@
     border-radius: 12px;
 }
 .servico_title{
+    width: 100%;
+    flex-wrap: nowrap;
     font-size: 1.3rem;
     color: #0F2650;
 }
 .servico_description{
     width: 100%;
     font-size: 1rem;
-    color: #000000;
     overflow: hidden;
+    color: #000000;
     text-align: justify;
 }
 #mais{
@@ -95,7 +97,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
 }
 #mais svg{
     background-color: transparent;
@@ -131,11 +133,11 @@
     width: 100%;
 }
 .swiper-button-next svg{
+    position: absolute;
     height: 2rem;
     width: 2rem;
     color: #01CFC9;
 }
-
 .swiper-slide {
     background: #fff;
   
@@ -233,17 +235,19 @@
 @media (min-width: 1200px) and (max-width: 1440px) {
     .servicos{
         padding-bottom: 10rem;
-        animation-range: entry 10% cover 30%
     }
     .servico_img{
         width: 160px;
         height: 160px;
     }
     .servico_title{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .servico_description{
         font-size: 1.4rem;
+    }
+    .servico_content{
+        width: 100%;
     }
     .servico_container svg{
         font-size: 2.5rem;
@@ -252,7 +256,7 @@
         max-height: 25rem;
     }
     .servico:hover{
-        max-height: 50rem;
+        max-height: 60rem;
     }
     #mais svg{
         font-size: 1.5rem;
@@ -264,6 +268,7 @@
 @media (min-width:1921px) and (max-width: 2560px) {
     .servicos{
         padding-top: 10rem;
+        padding-bottom: 22rem;
         h2{
             font-size: 4.8rem;
         }

@@ -34,14 +34,12 @@ export function Tecnologias() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Quando a div está visível na tela
-          gsap.to(boxRef.current, { duration: 1, y: 0, opacity: 1, delay: 0 });
+          gsap.to(boxRef.current, { duration: 1, y: 0, opacity: 1, delay: 0.2 });
         } else {
-          // Quando a div sai da tela
           gsap.to(boxRef.current, { duration: 1, y: 10, opacity: 0.2 });
         }
       });
-    }, { threshold: 0.3 }); // Ajuste o threshold conforme necessário
+    }, { threshold: 0.2 }); 
 
     if (boxRef.current) {
       observer.observe(boxRef.current);

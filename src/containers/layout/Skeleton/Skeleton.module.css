@@ -20,6 +20,7 @@
     width: 5.5rem;
     border-radius: 50%;
     margin-left: -0.3rem;
+    margin-top: 0.2rem;
     background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
     background-size: 200% 100%;
     animation: pulse 1.5s infinite;
@@ -28,7 +29,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 0.6rem;
+    margin-top: 0.4rem;
     gap: 3rem;
     li{
         width: 12.75rem;
@@ -97,6 +98,9 @@
 .second_li:nth-child(4){
     width: 75%;
 }
+.second_li:nth-child(5){
+    display: none;
+}
 #button_skeleton{
     height: 4rem;
     width: 37%;
@@ -146,6 +150,9 @@
 .third_p:nth-child(2){
     width: 7rem;
 }
+#right_skeleton_767{
+    display: none;
+}
 #right_skeleton{
     display: flex;
     justify-content: center;
@@ -166,5 +173,573 @@
         background-position: 200% 0;
     } 100% {
         background-position: 0 0;
+    }
+}
+@media (max-width: 480px){
+    #body_skeleton{
+        margin: 0;
+        z-index: 2;
+    }
+    #header_skeleton{
+        width: 100%;
+    }
+    #logo_skeleton{
+        height: 4.4rem;
+        width: 4.5rem;
+        margin-left: 0.8rem;
+        margin-top: 0.4rem;
+    }
+    #nav_skeleton{
+        flex-direction: column;
+        margin-top: 0.95rem;
+        margin-right: 1.2rem;
+        gap: 0.55rem;
+        li{
+            width: 2.5rem;
+            height: 2.8rem;
+        }
+    }
+    .nav_li:nth-child(2){
+        display: none;
+    }
+    .nav_li:nth-child(3){
+        display: none;
+    }
+    .nav_li:nth-child(4){
+        display: none;
+    }
+    #main_skeleton{
+        flex-direction: column;
+        margin-top: 0;
+        width: 100%;
+    }
+    #left_skeleton{
+        width: 100%;
+    }
+    #first_ul{
+        gap: 1rem;
+        li{
+            height: 3rem;
+        }
+    }
+    .firsts_li:nth-child(1){
+        width: 50%;
+     }
+     .firsts_li:nth-child(2){
+         width: 75%;
+     }
+     .firsts_li:nth-child(3){
+         width: 65%;
+     }
+    #right_skeleton_767{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: 31.2%;
+        margin: 1.5rem auto;
+        border-radius: 12px;
+        background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+        background-size: 200% 100%;
+        animation: pulse 1.5s infinite;
+            svg{
+            font-size: 2.5rem;
+            color: #bdbdbd;
+    }
+    }
+    #second_ul{
+        margin-top: 2rem;
+        gap: 1.05rem;
+        li{
+            height: 0.8rem;
+        }
+    }
+    .second_li:nth-child(1){
+        width: 95%;
+    }
+    .second_li:nth-child(2){
+        width: 85%;
+    }
+    .second_li:nth-child(3){
+        width: 95%;
+    }
+    .second_li:nth-child(4){
+        width: 85%;
+    }
+    .second_li:nth-child(5){
+        display: flex;
+        width: 95%;
+    }
+    #button_skeleton{
+        width: 19rem;
+        margin: auto;
+        margin-top: 3rem;
+    }
+    #third_ul{
+        margin-top: 1.9rem;
+        margin-left: 0.5rem;
+        flex-direction: column;
+        gap: 1.1rem;
+    }
+    .third_icon{
+        height: 3.1em;
+    }
+    .third_paragraphs{
+        margin-top: 0.25rem;
+    }
+    .third_p{
+        height: 0.8rem;
+    }
+    #right_skeleton{
+        display: none;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px){
+    #body_skeleton{
+        margin: 0;
+        z-index: 2;
+    }
+    #header_skeleton{
+        justify-content: space-between;
+        width: 100%;
+    }
+    #logo_skeleton{
+        height: 4.4rem;
+        width: 4.5rem;
+        margin-left: 0.8rem;
+        margin-top: 0.4rem;
+    }
+    #nav_skeleton{
+        flex-direction: column;
+        margin-top: 0.95rem;
+        margin-right: 1.2rem;
+        gap: 0.55rem;
+        li{
+            width: 2.5rem;
+            height: 2.8rem;
+        }
+    }
+    .nav_li:nth-child(2){
+        display: none;
+    }
+    .nav_li:nth-child(3){
+        display: none;
+    }
+    .nav_li:nth-child(4){
+        display: none;
+    }
+    #main_skeleton{
+        flex-direction: column;
+        margin-top: 0;
+        width: 100%;
+    }
+    #left_skeleton{
+        width: 100%;
+    }
+    #first_ul{
+        gap: 1.5rem;
+        li{
+            height: 3rem;
+        }
+    }
+    .firsts_li:nth-child(1){
+        width: 40%;
+     }
+     .firsts_li:nth-child(2){
+         width: 65%;
+     }
+     .firsts_li:nth-child(3){
+         width: 55%;
+     }
+    #right_skeleton_767{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 96.3%;
+        height: 31.2%;
+        margin: 2rem auto;
+        border-radius: 12px;
+        background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+        background-size: 200% 100%;
+        animation: pulse 1.5s infinite;
+            svg{
+            font-size: 2.5rem;
+            color: #bdbdbd;
+    }
+    }
+    #second_ul{
+        margin-top: 0rem;
+        li{
+            height: 0.9rem;
+        }
+    }
+    #button_skeleton{
+        width: 19rem;
+        margin: auto;
+        margin-top: 2.5rem;
+    }
+    #third_ul{
+        justify-content: center;
+        margin-top: 2.05rem;
+        margin-left: 0.5rem;
+        gap: 1.5rem;
+    }
+    .third_icon{
+        height: 3rem;
+    }
+    .third_paragraphs{
+        margin-top: 0.3rem;
+        gap: 0.8rem;
+    }
+    .third_p{
+        height: 0.8rem;
+    }
+    #right_skeleton{
+        display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #body_skeleton{
+        margin: 0;
+    }
+    #header_skeleton{
+        flex-direction: column;
+        width: 8.9%;
+        background-color: rgba(185, 228, 243, 1);
+        height: 22.7rem;
+        border-radius: 0px 18px 18px 0px;
+        padding-bottom: 0.5rem;
+        box-shadow: 0px 0px 10px #000;
+    }
+    #logo_skeleton{
+        height: 3rem;
+        width: 3.5rem;
+        margin-top: 0.5rem;
+    }
+    #nav_skeleton{
+        margin-top: 0.5rem;
+        flex-direction: column;
+        gap: 2rem;
+        li{
+            width: 3.4rem;
+        }
+    }
+    #main_skeleton{
+        position: absolute;
+        top: 0;
+        left: 12%;
+        margin-top: 0.5rem;
+    }
+    #left_skeleton{
+        height: 35rem;
+        width: 50%;
+    }
+    #first_ul{
+        gap: 0.9rem;
+        li{
+            height: 3rem;
+        }
+    }
+    .firsts_li:nth-child(1){
+        width: 50%;
+    }
+    .firsts_li:nth-child(2){
+        width: 75%;
+    }
+    .firsts_li:nth-child(3){
+        width: 65%;
+    }
+    #second_ul{
+        margin-top: 1.9rem;
+        gap: 0.77rem;
+        li{
+            height: 0.75rem;
+        }
+    }
+    .second_li:nth-child(5){
+        display: flex;
+        width: 60%;
+    }
+    #button_skeleton{
+        margin-top: 2.1rem;
+        width: 67%;
+    }
+    #third_ul{
+        gap: 1rem;
+        margin-top: 2.05rem;
+        flex-direction: column;
+    }
+    .third_icon{
+        height: 3rem;
+    }
+    .third_paragraphs{
+        margin-top: 0.2rem;
+    }
+    .third_p{
+        height: 0.8rem;
+    }
+    #right_skeleton{
+        margin-top: 2rem;
+        height: 34rem;
+        width: 44%;
+        margin-right: 1.5rem;
+        svg{
+            font-size: 4rem;
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    #body_skeleton{
+        margin: 0;
+    }
+    #header_skeleton{
+        flex-direction: column;
+        width: 7.5%;
+        background-color: rgba(185, 228, 243, 1);
+        height: 24.8rem;
+        border-radius: 0px 18px 18px 0px;
+        padding-bottom: 0.5rem;
+        box-shadow: 0px 0px 10px #000;
+    }
+    #logo_skeleton{
+        height: 3rem;
+        width: 3.5rem;
+        margin-top: 1rem;
+    }
+    #nav_skeleton{
+        margin-top: 1.7rem;
+        flex-direction: column;
+        gap: 2rem;
+        li{
+            width: 3.8rem;
+        }
+    }
+    #main_skeleton{
+        position: absolute;
+        top: 0;
+        left: 9.7%;
+        margin-top: 1rem;
+    }
+    #left_skeleton{
+        height: 35rem;
+        width: 50%;
+    }
+    #first_ul{
+        gap: 1.6rem;
+        li{
+            height: 3.5rem;
+        }
+    }
+    .firsts_li:nth-child(1){
+        width: 45%;
+    }
+    .firsts_li:nth-child(2){
+        width: 70%;
+    }
+    .firsts_li:nth-child(3){
+        width: 60%;
+    }
+    #second_ul{
+        margin-top: 2rem;
+        gap: 0.7rem;
+        li{
+            height: 1rem;
+        }
+    }
+    #button_skeleton{
+        margin-top: 2.3rem;
+        width: 55%;
+    }
+    #third_ul{
+        gap: 0.8rem;
+    }
+    .third_p{
+        height: 0.9rem;
+    }
+    #right_skeleton{
+        margin-top: 2rem;
+        height: 34rem;
+        width: 44%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1440px){
+    #body_skeleton{
+        margin: 0rem 4rem;
+    }
+    #header_skeleton{
+        width: 90%;
+    }
+    #nav_skeleton{
+        gap: 2.5rem;
+        li{
+            width: 10.5rem;
+        }
+    }
+    #main_skeleton{
+        margin-top: 4.8rem;
+    }
+    #left_skeleton{
+        width: 48%;
+    }
+    #first_ul{
+        margin-top: 1.3rem;
+        gap: 2.4rem;
+        li{
+            height: 3.8rem;
+        }
+    }
+    .firsts_li:nth-child(1){
+        width: 55%;
+    }
+    .firsts_li:nth-child(2){
+        width: 80%;
+    }
+    .firsts_li:nth-child(3){
+        width: 70%;
+    }
+    #second_ul{
+        gap: 0.7rem;
+        margin-top: 3.5rem;
+        li{
+            height: 0.9rem;
+        }
+    }
+    .second_li:nth-child(5){
+        display: flex;
+        width: 55%;
+    }
+    #button_skeleton{
+        width: 51.5%;
+        margin-top: 2.8rem;
+    }
+    #third_ul{
+        margin-top: 1.6rem;
+        gap: 2.8rem;
+    }
+    .third_p{
+        height: 0.9rem;
+    }
+}
+@media (min-width: 1441px) and (max-width: 1600px){
+    #header_skeleton{
+        width: 87%;
+    }
+    #nav_skeleton{
+        li{
+            width: 11.5rem;
+        }
+    }
+    #left_skeleton{
+        height: 41rem;
+    }
+    #first_ul{
+        margin-top: 0.5rem;
+    }
+    .firsts_li:nth-child(1){
+        width: 45%;
+    }
+    .firsts_li:nth-child(2){
+        width: 70%;
+    }
+    .firsts_li:nth-child(3){
+        width: 60%;
+    }
+    #second_ul{
+        margin-top: 2.8rem;
+        gap: 0.6rem;
+        li{
+            height: 1rem;
+        }
+    }
+    #button_skeleton{
+        margin-top: 3rem;
+        width: 47%;
+    }
+    #third_ul{
+        margin-top: 2.5rem;
+    }
+    .third_p{
+        height: 0.85rem;
+    }
+    #right_skeleton{
+        height: 44rem;
+        margin-top: -1rem;
+    }
+}
+@media (min-width:1921px) and (max-width: 2560px){
+    #body_skeleton{
+        margin: 0rem 11.8rem;
+    }
+    #header_skeleton{
+        width: 84%;
+    }
+    #logo_skeleton{
+        height: 10rem;
+        width: 10.5rem;
+        margin-left: 0rem;
+        margin-top: 0.8rem;
+    }
+    #nav_skeleton{
+        gap: 5rem;
+        margin-top: 1.2rem;
+        li{
+            width: 17rem;
+            height: 4.5rem;
+        }
+    }
+    #left_skeleton{
+        height: 60rem;
+        width: 50%;
+    }
+    #first_ul{
+        li{
+            height: 5rem;
+        }
+    }
+    .firsts_li:nth-child(1){
+        width: 45%;
+    }
+    .firsts_li:nth-child(2){
+        width: 70%;
+    }
+    .firsts_li:nth-child(3){
+        width: 60%;
+    }
+    #second_ul{
+        gap: 1rem;
+        margin-top: 5rem;
+        li{
+            height: 1.2rem;
+        }
+    }
+    #button_skeleton{
+        height: 5.5rem;
+        width: 40%;
+        margin-top: 3.6rem;
+    }
+    #third_ul{
+        margin-top: 3.5rem;
+        gap: 9.5rem;
+    }
+    .third_icon{
+        height: 5.2rem;
+        width: 5rem;
+    }
+    .third_paragraphs{
+        justify-content: center;
+    }
+    .third_p{
+        height: 1.3rem;
+    }
+    .third_p:nth-child(1){
+        width: 16rem;
+    }
+    .third_p:nth-child(2){
+        width: 12rem;
+    }
+    #right_skeleton{
+        height: 60rem;
+        width: 38.5%;
+        margin-right: 5.8rem;
     }
 }

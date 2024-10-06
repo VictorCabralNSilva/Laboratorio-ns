@@ -7,10 +7,10 @@ export function Skeleton() {
     <header id={styles.header_skeleton}>
         <div id={styles.logo_skeleton}></div>
         <ul id={styles.nav_skeleton}>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li className={styles.nav_li}></li>
+            <li className={styles.nav_li}></li>
+            <li className={styles.nav_li}></li>
+            <li className={styles.nav_li}></li>
         </ul>
     </header>
     <main id={styles.main_skeleton}>
@@ -20,7 +20,9 @@ export function Skeleton() {
                 <li className={styles.firsts_li}></li>
                 <li className={styles.firsts_li}></li>
             </ul>
+            <div id={styles.right_skeleton_767}><FaImage/></div>
             <ul id={styles.second_ul}>
+                <li className={styles.second_li}></li>
                 <li className={styles.second_li}></li>
                 <li className={styles.second_li}></li>
                 <li className={styles.second_li}></li>

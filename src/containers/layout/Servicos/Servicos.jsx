@@ -35,14 +35,12 @@ export function Servicos() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Quando a div está visível na tela
-          gsap.to(boxRef.current, { duration: 1, y: 0, opacity: 1, delay: 0 });
+          gsap.to(boxRef.current, { duration: 1, y: 0, opacity: 1, delay: 0.2 });
         } else {
-          // Quando a div sai da tela
           gsap.to(boxRef.current, { duration: 1, y: 10, opacity: 0.2 });
         }
       });
-    }, { threshold: 0.3 }); // Ajuste o threshold conforme necessário
+    }, { threshold: 0.3 }); 
 
     if (boxRef.current) {
       observer.observe(boxRef.current);
@@ -81,7 +79,7 @@ export function Servicos() {
               },
               1200: {
                 slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: 12,
               },
               992: {
                 slidesPerView: 2,
