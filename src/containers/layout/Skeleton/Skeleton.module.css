@@ -177,7 +177,7 @@
 }
 @media (max-width: 480px){
     #body_skeleton{
-        margin: 0;
+        margin: 0 0 0 0.5rem;
         z-index: 2;
     }
     #header_skeleton{
@@ -186,7 +186,7 @@
     #logo_skeleton{
         height: 4.4rem;
         width: 4.5rem;
-        margin-left: 0.8rem;
+        margin-left: 0.3rem;
         margin-top: 0.4rem;
     }
     #nav_skeleton{
@@ -237,7 +237,7 @@
         align-items: center;
         width: 95%;
         height: 31.2%;
-        margin: 1.5rem auto;
+        margin: 1.5rem 0;
         border-radius: 12px;
         background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
         background-size: 200% 100%;
@@ -272,7 +272,7 @@
     }
     #button_skeleton{
         width: 19rem;
-        margin: auto;
+        margin: 0 auto;
         margin-top: 3rem;
     }
     #third_ul{
@@ -296,7 +296,7 @@
 }
 @media (min-width: 481px) and (max-width: 767px){
     #body_skeleton{
-        margin: 0;
+        margin: 0 0 0 0.5rem;
         z-index: 2;
     }
     #header_skeleton{
@@ -357,7 +357,7 @@
         align-items: center;
         width: 96.3%;
         height: 31.2%;
-        margin: 2rem auto;
+        margin: 2rem 0;
         border-radius: 12px;
         background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
         background-size: 200% 100%;
