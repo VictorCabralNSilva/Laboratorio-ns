@@ -16,7 +16,7 @@ export function QuemSomos() {
         if (entry.isIntersecting) {
           gsap.to(boxRef.current, { duration: 1, y: 0, opacity: 1, delay: 0.2 });
         } else {
-          gsap.to(boxRef.current, { duration: 1, y: 10, opacity: 0.2 });
+          gsap.to(boxRef.current, { duration: 1, y: 10, opacity: 0.1 });
         }
       });
     }, { threshold: 0.3 }); 

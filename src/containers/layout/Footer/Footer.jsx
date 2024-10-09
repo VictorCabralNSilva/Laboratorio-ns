@@ -72,6 +72,7 @@ export function Footer() {
             <a id={styles.footer_instagram} href='https://www.instagram.com/laboratorio.ns?igsh=MTJydDQ2ajRrcWliaw==' target='_blank'><FaInstagram />Instagram</a>
         </div>
 
+        
         <div className={styles.footerFeedback}>
           <FaCircleChevronLeft onClick={prevFeedback} className={styles.arrow}  title='Comentário Anterior'/>
           <div className={styles.feedbackContainer}>
@@ -96,6 +97,7 @@ export function Footer() {
 
         <div id={styles.footer_logo}><img src={Logofooter} loading="lazy" alt="imagem logo" title="Laboratório NS" /></div>
       </div>
+      <p id={styles.direitos}>© 2024 Victor/Daniel - Todos os direitos reservados.</p>
     </footer>
   )
 }

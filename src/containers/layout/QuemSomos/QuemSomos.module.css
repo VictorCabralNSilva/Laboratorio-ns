@@ -49,13 +49,19 @@
     margin-top: 1rem;
 }
 .quemsomos_social{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
 }
 .quemsomos_social ul{
+    width: 100%;
     display: flex;
     flex-direction: row;
 }
 .quemsomos_social ul li{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +85,7 @@
     transition: 0.5s ease-in-out;
 }
 .quemsomos_social svg:hover{
-    background-position: 100% 0%;
+    background-position: 88% 0%;
     color: #ffffff;
 }
 .quemsomos_social a:hover .tooltip1, .quemsomos_social a:hover .tooltip2{
@@ -90,7 +96,7 @@
 .tooltip1,.tooltip2{
     position: absolute;
     top: -20px;
-    left: -48%;
+    left: -46%;
     opacity: 0;
     background-color: #01CFC9;
     color: white;
@@ -104,7 +110,7 @@
     letter-spacing: 0.5px;
 }
 .tooltip2{
-    left: -31%;
+    left: -35%;
 }
 .tooltip1::before, .tooltip2::before {
     position: absolute;
@@ -120,7 +126,7 @@
 }
 .qs_insta svg{
     background: linear-gradient(40deg, #0F2650, #0F2650, #0F2650, #0F2650, #0F2650, #0F2650, #0F2650, #fcaf45, #f77737, #c13584, #833ab4, #5b51d8, #405de6);
-    background-size: 400% 100%;
+    background-size: 500% 100%;
 }
 .qs_link svg{
     background: linear-gradient(40deg, #0F2650, #0e76a8);
@@ -176,6 +182,15 @@
         width: 19rem;
         min-height: 17rem;
     }
+    .quemsomos_social ul li{
+        width: 51%;
+    }
+    .tooltip1{
+        left: -55%;
+    }
+    .tooltip2{
+        left: -37%;
+    }
 }
 @media (min-width: 481px) and (max-width: 767px) {
     .quemsomos{
@@ -192,14 +207,20 @@
         margin-bottom: 8rem;
         font-size: 2.8rem;
     }
+    .tooltip1{
+        left: -22%;
+    }
+    .tooltip2{
+        left: -11%;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .quemsomos{
         padding-bottom: 0rem;
     }
     #quemsomos_content{
-        gap: 2.5rem;
-        margin-right: 1.5rem;
+        gap: 1rem;
+        margin: 0 3rem 0 2rem;
         padding-bottom: 10rem;
     }
     .quemsomos h2{
@@ -210,12 +231,16 @@
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     #quemsomos_content{
-        gap: 5rem;
+        gap: 3rem;
+        margin: 0 2rem 0 0;
     }
     .quemsomos h2{
         margin-top: -4rem;
         margin-bottom: 8rem;
         font-size: 3rem;
+    }
+    .tooltip1{
+        left: -25%;
     }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {

@@ -1,6 +1,7 @@
 import styles from './Tecnologias.module.css'
 import Logofooter from '../../../assets/Logofooter_11zon.webp'
 import Logoheader from '../../../assets/Logoheader_11zon.webp'
+import TecnologiaImg1 from '../../../assets/TecnologiaImg1_teste.jpeg'
 import { FaCaretDown, FaCircleArrowLeft, FaCircleArrowRight } from 'react-icons/fa6';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -13,7 +14,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
 const tecnologias = [
-  { id: 1, title: 'Protesi Dentali', vermais: 'Ver Mais', image: [Logoheader], description: 'é isso ai funcionou n sei seila pode ser talvez çlkjfaçsldfja çalskdfjaçlskdfjqpwoeiur çlaskjfpoqwieurçlaskghaçlsgh lçajsdfpoiqweuaçlskdjfçalskdf çalskfjpoqwieurçalsjfpowiaçlghal aoiewpqowigjaslçkj wioea çalskjdpqowighalk sj pwqoigjaçio aj poaiwgj jsikgja', alt: 'foto da tecnologia tal' },
+  { id: 1, title: 'Protesi Dentali', vermais: 'Ver Mais', image: [TecnologiaImg1], description: 'é isso ai funcionou n sei seila pode ser talvez çlkjfaçsldfja çalskdfjaçlskdfjqpwoeiur çlaskjfpoqwieurçlaskghaçlsgh lçajsdfpoiqweuaçlskdjfçalskdf çalskfjpoqwieurçalsjfpowiaçlghal aoiewpqowigjaslçkj wioea çalskjdpqowighalk sj pwqoigjaçio aj poaiwgj jsikgja', alt: 'foto da tecnologia tal' },
   { id: 2, title: 'Ortodonzia', vermais: 'Ver Mais', image: [Logofooter], description: 'Sigillatura del canale ripulito e disinfettato', alt: 'foto da tecnologia tal' },
   { id: 3, title: 'Sbiancamento', vermais: 'Ver Mais', image: [Logoheader], description: 'Pulizia professionale con strumenti manuali', alt: 'foto da tecnologia tal' },
   { id: 4, title: 'Igiene Dentale', vermais: 'Ver Mais', image: [Logofooter], description: 'Trattamenti di igiene orale professionale.', alt: 'foto da tecnologia tal' },
@@ -34,9 +35,9 @@ export function Tecnologias() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          gsap.to(boxRef.current, { duration: 1, y: 0, opacity: 1, delay: 0.2 });
+          gsap.to(boxRef.current, { duration: 1, y: 0, opacity: 1, delay: 0.05 });
         } else {
-          gsap.to(boxRef.current, { duration: 1, y: 10, opacity: 0.2 });
+          gsap.to(boxRef.current, { duration: 1, y: 10, opacity: 0.1 });
         }
       });
     }, { threshold: 0.2 }); 
@@ -58,7 +59,7 @@ export function Tecnologias() {
                  <h2>Tecnologias</h2>
                   <article className={styles.tecnologias_container}>
                     <div className={styles.tecnologias_description}>
-                    <div id={styles.tecnologias_img_481}><img src={Logofooter} alt="" /></div>
+                    <div id={styles.tecnologias_img_481}><img src={TecnologiaImg1} alt="" /></div>
                       <p>Nós, do Laboratório NS, temos tecnologia de ponta para criar próteses dentárias que transformam sorrisos. Combinamos precisão técnica e materiais de alta qualidade para garantir próteses confortáveis e esteticamente perfeitas. Confie em nós para transformar seu sorriso com o que há de mais avançado em odontologia protética.
                       </p>
                   <div className={styles.tecnologias_slider}>
@@ -103,7 +104,8 @@ export function Tecnologias() {
                         <div className={styles.tecnologias_content}>
                         {tecnologias.map((tecnologia) => (
                         <SwiperSlide key={tecnologia.id} className={styles.tecnologia}>
-                          <img src={Logoheader} loading="eager" alt={tecnologia.alt} />
+                          <div className={styles.tecnologia_img}>
+                          <img src={tecnologia.image} loading="lazy" alt={tecnologia.alt} /></div>
                           <div className={styles.tecnologia_title}>
                           <h4>{tecnologia.title}</h4>
                           </div>
@@ -120,7 +122,7 @@ export function Tecnologias() {
                     </div>
                   </div>  
                     </div>  
-                      <div id={styles.tecnologias_img}>foto do modelo</div>
+                      <div id={styles.tecnologias_img}><img src={TecnologiaImg1} alt="" loading="lazy" /></div>
                   </article>
                 </div>
         </section>

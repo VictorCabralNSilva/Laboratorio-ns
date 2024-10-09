@@ -2,21 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 6rem;
-    /*animation: fade linear both 1s;
-    animation-timeline: view();
-    animation-range: entry 10% cover 40%;*/
+    padding-bottom: 16rem;
     width: 100%;
     height: 100%;
 }
-/*@keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}*/
 .servicos h2{
     font-size: 3.7rem;
     font-weight: 700;
@@ -149,22 +138,22 @@
     .servicos{
         animation-range: entry 35% cover 40%;
         padding-top: 1rem;
-        margin-bottom: 6rem;
+        margin-bottom: 7rem;
     }
     .servicos h2{
         font-size: 2.5rem;
     }
     .swiper .servico{
-        max-height: 18rem;
+        max-height: 22rem;
         width: 10rem;
         gap: 2rem;
-        padding: 1rem 1rem 2rem 1rem;
+        padding: 1rem 1rem 3.5rem 1rem;
     }
     .servico:hover{
         max-height: 50rem;
     }
     .servico_img{
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .servico_container svg{
         margin: 0rem 0rem;
@@ -183,19 +172,22 @@
 @media (min-width: 481px) and (max-width: 767px) {
     .servicos{
         animation-range: entry 35% cover 40%;
-        padding-top: 1rem;
+        padding-top: 3.7rem;
+        padding-bottom: 10rem;
     }
     .servicos h2{
         font-size: 2.8rem;
     }
     .swiper .servico{
-        max-height: 17rem;
+        max-height: 22rem;
+        gap: 2rem;
+        padding: 1rem 2.5rem 4rem 2.5rem;
     }
     .servico:hover{
         max-height: 40rem;
     }
     .servico_img{
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
     .servico_container svg{
         margin: 0rem 0.1rem;
@@ -212,6 +204,10 @@
     }
     .swiper .servico{
         max-height: 17rem;
+        padding: 1rem 2.5rem 3rem 2.5rem;
+    }
+    .servico:hover{
+        max-height: 60rem;
     }
     .servico_img{
         margin-top: 1rem;
@@ -222,7 +218,7 @@
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .servicos{
-        animation-range: entry 39% cover 40%;
+        padding-bottom: 9.5rem;
         h2{
             margin-top: -4rem;
             font-size: 3rem;

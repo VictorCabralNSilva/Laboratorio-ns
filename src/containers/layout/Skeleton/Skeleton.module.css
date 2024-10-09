@@ -456,6 +456,18 @@
             height: 0.75rem;
         }
     }
+    .second_li:nth-child(1){
+        width: 75%;
+    }
+    .second_li:nth-child(2){
+        width: 85%;
+    }
+    .second_li:nth-child(3){
+        width: 95%;
+    }
+    .second_li:nth-child(4){
+        width: 70%;
+    }
     .second_li:nth-child(5){
         display: flex;
         width: 60%;
@@ -479,10 +491,11 @@
         height: 0.8rem;
     }
     #right_skeleton{
-        margin-top: 2rem;
-        height: 34rem;
-        width: 44%;
-        margin-right: 1.5rem;
+        margin-top: 10rem;
+        height: 30rem;
+        width: 63%;
+        margin-right: 1.7rem;
+        border-radius: 80px;
         svg{
             font-size: 4rem;
         }
@@ -546,6 +559,18 @@
             height: 1rem;
         }
     }
+    .second_li:nth-child(1){
+        width: 70%;
+    }
+    .second_li:nth-child(2){
+        width: 80%;
+    }
+    .second_li:nth-child(3){
+        width: 90%;
+    }
+    .second_li:nth-child(4){
+        width: 65%;
+    }
     #button_skeleton{
         margin-top: 2.3rem;
         width: 55%;
@@ -556,10 +581,18 @@
     .third_p{
         height: 0.9rem;
     }
+    .third_p:nth-child(1){
+        width: 8rem;
+    }
+    .third_p:nth-child(2){
+        width: 5rem;
+    }
     #right_skeleton{
-        margin-top: 2rem;
-        height: 34rem;
-        width: 44%;
+        margin-top: 5rem;
+        height: 30.5rem;
+        width: 45%;
+        border-radius: 80px;
+        margin-right: 2.3rem;
     }
 }
 @media (min-width: 1200px) and (max-width: 1440px){
@@ -604,6 +637,18 @@
             height: 0.9rem;
         }
     }
+    .second_li:nth-child(1){
+        width: 85%;
+    }
+    .second_li:nth-child(2){
+        width: 95%;
+    }
+    .second_li:nth-child(3){
+        width: 105%;
+    }
+    .second_li:nth-child(4){
+        width: 90%;
+    }
     .second_li:nth-child(5){
         display: flex;
         width: 55%;
@@ -618,6 +663,12 @@
     }
     .third_p{
         height: 0.9rem;
+    }
+    #right_skeleton{
+        width: 38%;
+        height: 35rem;
+        margin-top: 2rem;
+        border-radius: 80px;
     }
 }
 @media (min-width: 1441px) and (max-width: 1600px){

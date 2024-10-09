@@ -73,7 +73,7 @@ export function Header() {
 
     const handleScroll = () => {
         const offset = window.scrollY;
-        if (offset > 50) {
+        if (offset > 25) {
             setIsSticky(true);
         } else {
             setIsSticky(false);
@@ -89,7 +89,7 @@ export function Header() {
 
     return (
         <header className={`${styles.top_header} ${isOpen ? styles._open : ''} ${isSticky ? styles.sticky : ''}`}>
-            <nav className={navOpen ? `${styles.nav_header} ${styles._navOpen}`: styles.nav_header}>
+        <nav className={navOpen ? `${styles.nav_header} ${styles._navOpen}` : styles.nav_header}>
                 <div className={styles.logo}>
                     <a href="#">
                         <img className={styles.logo_img} src={Logoheader} alt="imagem logo" title="Laboratório NS" loading="lazy"/>

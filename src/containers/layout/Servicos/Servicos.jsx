@@ -35,12 +35,12 @@ export function Servicos() {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          gsap.to(boxRef.current, { duration: 1, y: 0, opacity: 1, delay: 0.2 });
+          gsap.to(boxRef.current, { duration: 1, y: 0, opacity: 1, delay: 0.05 });
         } else {
-          gsap.to(boxRef.current, { duration: 1, y: 10, opacity: 0.2 });
+          gsap.to(boxRef.current, { duration: 1, y: 10, opacity: 0.1 });
         }
       });
-    }, { threshold: 0.3 }); 
+    }, { threshold: 0.45 }); 
 
     if (boxRef.current) {
       observer.observe(boxRef.current);
