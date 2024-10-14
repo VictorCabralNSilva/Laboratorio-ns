@@ -1,12 +1,7 @@
 import styles from './Inicio.module.css'
 import { FaPhone, FaLocationDot } from "react-icons/fa6"
-import Logofooter from '../../../assets/Logofooter_11zon.webp'
-import ImgInicio from '../../../assets/ImgInicio.jpeg'
-
-
+import ImgInicio from '../../../assets/ImgInicio_11zon.webp'
 export function Inicio() {
-    
-    
     return(
         <section className={styles.inicio} id="inicio">
               <div id={styles.left_inicio}>  
@@ -16,7 +11,7 @@ export function Inicio() {
                     <h1>Tecnologia</h1>
                 </header>
                 <article id={styles.main_inicio}>
-                    <div id={styles.inicio_img_481}><img src={ImgInicio} alt="" loading="lazy" /></div>
+                    <div id={styles.inicio_img_481}><img src={ImgInicio} alt="foto do modelo sorrindo" loading="eager" /></div>
                     <p>No Laboratório NS, cada sorriso é uma obra de arte. Com tecnologia avançada e precisão, criamos próteses dentárias que transformam vidas. Confie em nós para trazer de volta a alegria de sorrir.</p>
                     <a className={styles.button_styled} target='_blank' href='https://wa.me/5521964380643?text=Ol%C3%A1%2C%20tudo%20bem%3F' title='Whatsapp'>Entre em contato</a>
                     <ul>
@@ -24,9 +19,8 @@ export function Inicio() {
                         <li title='Local'><a href="https://maps.app.goo.gl/dPFKEzRmo1m5awCD8" target='_blank'><FaLocationDot /><div className={styles.icon}><span>Rio de Janeiro (RJ) </span><span>Zona Sul</span></div></a></li>
                     </ul>
                 </article>
-                
               </div>
-                <div id={styles.inicio_img}><img src={ImgInicio} alt="" loading="lazy" /></div>
+                <div id={styles.inicio_img}><img src={ImgInicio} alt="foto do modelo sorrindo" loading="eager" /></div>
         </section>
     )
 }

@@ -17,7 +17,7 @@
     color: #0F2650;
     margin-bottom: 10rem;
 }
-#quemsomos1{
+#quemsomos1, #quemsomos2{
     background-color: #ffffff;
     width: 27rem;
     min-height: 16rem;
@@ -31,7 +31,7 @@
     padding: 0rem 1rem;
     transition: 0.5s;
 }
-#quemsomos1 img{
+#quemsomos1 img, #quemsomos2 img{
     width: 149px;
     height: 135px;
     margin-top: -4rem;
@@ -39,11 +39,11 @@
     background-color: #0F2650;
     border-radius: 27px;
 }
-#quemsomos1 h4{
+#quemsomos1 h4, #quemsomos2 h4{
     font-size: 1.3rem;
     color: #0F2650;
 }
-#quemsomos1_description{
+#quemsomos1_description, #quemsomos2_description{
     font-size: 1rem;
     color: #000000;
     margin-top: 1rem;
@@ -96,7 +96,7 @@
 .tooltip1,.tooltip2{
     position: absolute;
     top: -20px;
-    left: -46%;
+    left: -23%;
     opacity: 0;
     background-color: #01CFC9;
     color: white;
@@ -110,7 +110,7 @@
     letter-spacing: 0.5px;
 }
 .tooltip2{
-    left: -35%;
+    left: -10%;
 }
 .tooltip1::before, .tooltip2::before {
     position: absolute;
@@ -132,51 +132,19 @@
     background: linear-gradient(40deg, #0F2650, #0e76a8);
     background-size: 400% 100%;
 }
-#quemsomos2{
-    background-color: #ffffff;
-    width: 27rem;
-    height: 16rem;
-    border-radius: 44px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid #01CFC9;
-    gap: 0.2rem;
-    padding: 0rem 1rem;
-    transition: 0.5s;
-}
-#quemsomos2 img{
-    width: 149px;
-    height: 135px;
-    margin-top: -4rem;
-    margin-bottom: 1rem;
-    background-color: #0F2650;
-    border-radius: 27px;
-}
-#quemsomos2 h4{
-    font-size: 1.3rem;
-    color: #0F2650;
-}
-#quemsomos2_description{
-    font-size: 1rem;
-    color: #000000;
-    margin-top: 1rem;
-}
 @media (max-width: 480px) {
     .quemsomos{
         padding-bottom: 0rem;
-        animation-range: entry 20% cover 25%;
+        h2{
+            margin-bottom: 8rem;
+            font-size: 2.5rem;
+        }
     }
     #quemsomos_content{
         padding-bottom: 10rem;
         flex-direction: column;
         align-items: center;
         gap: 8rem;
-    }
-    .quemsomos h2{
-        margin-bottom: 8rem;
-        font-size: 2.5rem;
     }
     #quemsomos1, #quemsomos2{
         width: 19rem;
@@ -195,7 +163,10 @@
 @media (min-width: 481px) and (max-width: 767px) {
     .quemsomos{
         padding-bottom: 0rem;
-        animation-range: entry 20% cover 25%;
+        h2{
+            margin-bottom: 8rem;
+            font-size: 2.8rem;
+        }
     }
     #quemsomos_content{
         padding-bottom: 10rem;
@@ -203,30 +174,38 @@
         align-items: center;
         gap: 8rem;
     }
-    .quemsomos h2{
-        margin-bottom: 8rem;
-        font-size: 2.8rem;
+    .quemsomos_social a{
+        margin-left: 0.6rem;
+        width: 29%;
     }
     .tooltip1{
-        left: -22%;
+        left: -51%;
     }
     .tooltip2{
-        left: -11%;
+        left: -34%;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .quemsomos{
         padding-bottom: 0rem;
+        h2{
+            margin-top: -5rem;
+            margin-bottom: 8rem;
+            font-size: 2.8rem;
+        }
     }
     #quemsomos_content{
         gap: 1rem;
-        margin: 0 3rem 0 2rem;
         padding-bottom: 10rem;
     }
-    .quemsomos h2{
-        margin-top: -5rem;
-        margin-bottom: 8rem;
-        font-size: 2.8rem;
+    #quemsomos1, #quemsomos2{
+        width: 20.5rem;
+    }
+    .tooltip1{
+        left: -47%;
+    }
+    .tooltip2{
+        left: -31%;
     }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -239,23 +218,66 @@
         margin-bottom: 8rem;
         font-size: 3rem;
     }
+    .quemsomos_social a{
+        margin-left: 0.6rem;
+    }
+    #quemsomos1, #quemsomos2{
+        width: 25rem;
+    }
     .tooltip1{
-        left: -25%;
+        left: -29%;
+    }
+    .tooltip2{
+        left: -15%;
     }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
     .quemsomos{
         padding-bottom: 8rem;
+        h2{
+            font-size: 3.3rem;
+        }
     }
     #quemsomos1, #quemsomos2{
-        width: 25rem;
+        width: 26rem;
+    }
+    .quemsomos_social a{
+        margin-left: 0.6rem;
+        width: 35%;
     }
     .tooltip1::before, .tooltip2::before{
         bottom: -14%;
     }
+    .tooltip1{
+        left: -25%;
+    }
+    .tooltip2{
+        left: -13%;
+    }
 }
 @media (min-width: 1441px) and (max-width: 1600px) {
-
+    .quemsomos{
+        padding-bottom: 8rem;
+        h2{
+            font-size: 3.3rem;
+        }
+    }
+    #quemsomos1, #quemsomos2{
+        width: 26rem;
+    }
+    .quemsomos_social a{
+        margin-left: 0.6rem;
+        width: 35%;
+    }
+    .tooltip1::before, .tooltip2::before{
+        bottom: -14%;
+    }
+    .tooltip1{
+        left: -36.5%;
+    }
+    .tooltip2{
+        left: -21%;
+    }
 }
 @media (min-width: 1921px) and (max-width: 2560px) {
     .quemsomos{
@@ -266,20 +288,20 @@
         font-size: 4.8rem;
         margin-bottom: 15rem;
     }
-    #quemsomos1 {
+    #quemsomos1, #quemsomos2 {
         height: 28rem;
         width: 40rem;
         border-radius: 60px;
     }
-    #quemsomos1 img{
+    #quemsomos1 img, #quemsomos2 img{
         width: 250px;
         height: 236px;
         margin-top: -7rem;
     }
-    #quemsomos1 h4{
+    #quemsomos1 h4, #quemsomos2 h4{
         font-size: 2.5rem;
     }
-    #quemsomos1_description{
+    #quemsomos1_description, #quemsomos2_description{
         font-size: 1.6rem;
     }
     .quemsomos_social svg{
@@ -288,26 +310,23 @@
         margin: auto 4rem;
         border-radius: 10px;
     }
-    #quemsomos2 {
-        height: 28rem;
-        width: 40rem;
-        border-radius: 60px;
+    .quemsomos_social a{
+        width: 30%;
     }
-    #quemsomos2 img{
-        width: 250px;
-        height: 236px;
-        margin-top: -7rem;
-    }
-    #quemsomos2 h4{
-        font-size: 2.5rem;
-    }
-    #quemsomos2_description{
-        font-size: 1.6rem;
-    }
-    .quemsomos_social a:hover .tooltip{
+    .quemsomos_social a:hover .tooltip1, .quemsomos_social a:hover .tooltip2{
         top: -62px;
     }
-    .tooltip::before{
+    .tooltip1::before, .tooltip2::before{
         bottom: -10%;
+    }
+    .tooltip1, .tooltip2{
+        border-radius: 8px;
+        font-size: 1.7rem;
+    }
+    .tooltip1{
+        left: -41%;
+    }
+    .tooltip2{
+        left: -22%;
     }
 }

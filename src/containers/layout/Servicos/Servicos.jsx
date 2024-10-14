@@ -1,17 +1,15 @@
 import styles from "./servicos.module.css"
-import Logoheader from '../../../assets/Logoheader_11zon.webp'
-import Logofooter from '../../../assets/Logofooter_11zon.webp'
+import Logoheader from '../../../../public/Logoheader_11zon.webp'
+import Logofooter from '../../../../public/Logofooter_11zon.webp'
 import { FaCaretDown, FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { gsap } from "gsap/gsap-core";
 import { useEffect, useRef } from "react";
-
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
 const servicos = [
   { id: 1, title: 'Protesi Dentali', vermais: 'Ver Mais', image: [Logoheader], description: 'é isso ai funcionou n sei seila pode ser talvez çlkjfaçsldfja çalskdfjaçlskdfjqpwoeiur çlaskjfpoqwieurçlaskghaçlsgh lçajsdfpoiqweuaçlskdjfçalskdf çalskfjpoqwieurçalsjfpowiaçlghal aoiewpqowigjaslçkj wioea çalskjdpqowighalk sj pwqoigjaçio aj poaiwgj jsikgja', alt: 'foto do serviço tal' },
   { id: 2, title: 'Ortodonzia', vermais: 'Ver Mais', image: [Logofooter], description: 'Sigillatura del canale ripulito e disinfettato', alt: 'foto do serviço tal' },
@@ -26,11 +24,8 @@ const servicos = [
   { id: 11, title: 'Ortodonzia', vermais: 'Ver Mais', image: [Logofooter], description: 'Sigillatura del canale ripulito e disinfettato', alt: 'foto do serviço tal' },
   { id: 12, title: 'Igiene Dentale', vermais: 'Ver Mais', image: [Logoheader], description: 'Trattamenti di igiene orale professionale.', alt: 'foto do serviço tal' },
 ];
-
 export function Servicos() {
-
   const boxRef = useRef(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -40,12 +35,10 @@ export function Servicos() {
           gsap.to(boxRef.current, { duration: 1, y: 10, opacity: 0.1 });
         }
       });
-    }, { threshold: 0.45 }); 
-
+    }, { threshold: 0.3 }); 
     if (boxRef.current) {
       observer.observe(boxRef.current);
     }
-
     return () => {
       if (boxRef.current) {
         observer.unobserve(boxRef.current);

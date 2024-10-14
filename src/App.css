@@ -4,7 +4,7 @@
 #main{
     display: flex;
     flex-direction: column;
-    padding-top: 13.8rem;
+    padding-top: 12rem;
     gap: 8rem;
 }
 @media (max-width: 480px) {
@@ -48,15 +48,15 @@
         margin: auto 4rem;
     }
     #main{
-        padding-top: 10rem;
+        padding-top: 8rem;
         gap: 4rem;
     }
 }
 @media (min-width: 1441px) and (max-width: 1600px) {
     #main{
-        padding-top: 12rem;
+        padding-top: 10rem;
+        gap: 4.8rem;
     }
-
 }
 @media (min-width: 2560px) {
     #body{

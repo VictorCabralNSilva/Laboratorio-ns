@@ -7,10 +7,8 @@ const Servicos = React.lazy(() => import('./containers/layout/Servicos/Servicos'
 const Tecnologias = React.lazy(() => import('./containers/layout/Tecnologias/Tecnologias').then(module => ({ default: module.Tecnologias })));
 const QuemSomos = React.lazy(() => import('./containers/layout/QuemSomos/QuemSomos').then(module => ({ default: module.QuemSomos })));
 const Footer = React.lazy(() => import('./containers/layout/Footer/Footer').then(module => ({ default: module.Footer })));
-
 function App() {
   return (
-    <>
     <Suspense fallback={<Skeleton />}>
       <Header />
       <div id='body'>
@@ -23,7 +21,6 @@ function App() {
       </div>
       <Footer />
     </Suspense>  
-    </>
   )
 }
 export default App

@@ -1,6 +1,5 @@
 import { FaImage } from 'react-icons/fa6'
 import styles from './Skeleton.module.css'
-
 export function Skeleton() {
     return(
     <section id={styles.body_skeleton}>
@@ -31,7 +30,6 @@ export function Skeleton() {
             <p id={styles.button_skeleton}></p>
             <ul id={styles.third_ul}>
                 <li className={styles.third_li}>
-                    
                     <div className={styles.third_icon}></div>
                     <div className={styles.third_paragraphs}>
                     <p className={styles.third_p}></p>

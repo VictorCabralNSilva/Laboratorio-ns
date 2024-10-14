@@ -1,15 +1,11 @@
 import styles from './QuemSomos.module.css'
-import Logofooter from '../../../assets/Logofooter_11zon.webp'
-import Logoheader from '../../../assets/Logoheader_11zon.webp'
+import Logofooter from '../../../../public/Logofooter_11zon.webp'
+import Logoheader from '../../../../public/Logoheader_11zon.webp'
 import { FaInstagram, FaLinkedinIn } from 'react-icons/fa6'
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-
-
-
 export function QuemSomos() {
   const boxRef = useRef(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -20,11 +16,9 @@ export function QuemSomos() {
         }
       });
     }, { threshold: 0.3 }); 
-
     if (boxRef.current) {
       observer.observe(boxRef.current);
     }
-
     return () => {
       if (boxRef.current) {
         observer.unobserve(boxRef.current);

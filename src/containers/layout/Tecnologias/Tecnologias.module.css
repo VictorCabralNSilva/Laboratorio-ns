@@ -47,7 +47,7 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 .tecnologias_slider svg {
     background-color: #000000;
@@ -81,7 +81,7 @@
     word-wrap: break-word;
     border: 1px solid #01CFC9;
     gap: 0.5rem;
-    padding: 1rem 3.5rem 3.3rem 3.5rem;
+    padding: 1rem 3rem 3.3rem 3rem;
     transition: max-height 0.6s ease, background-color 0.6s ease, border-color 0.6s ease;
 }
 .tecnologia:hover{
@@ -110,15 +110,14 @@
     color: #0F2650;
 }
 .tecnologia_description{
+    width: 100%;
     font-size: 1rem;
     color: #000000;
     overflow: hidden;
-    text-align: justify;
+    text-align: center;
 }
 .tecnologia_content{
-    font-size: 1rem;
     font-weight: 400;
-    color: #000000;
     margin-top: 1rem;
 }
 #mais{
@@ -136,8 +135,8 @@
     margin: 0;
 }
 #tecnologias_img{
-    height: 40rem;
-    width: 41rem;
+    height: 38rem;
+    width: 40rem;
     border-radius: 115px;
     margin-top: 1rem;
     img{
@@ -163,7 +162,6 @@
     color: #FFFFFF;
     transform: rotate(-180deg);
 }
-
 .swiper {
     width: 100%;
     transition: 0.5s;
@@ -181,7 +179,6 @@
     width: 2rem;
     color: #01CFC9;
 }
-
 .swiper-slide {
     background: #fff;
     display: flex;
@@ -206,19 +203,25 @@
             margin-top: 2rem;
         }
     }
-    .tecnologias_slider svg{
-        font-size: 2.5rem;
+    .tecnologias_slider {
+        margin-top: 2.5rem;
+        svg{
+        font-size: 2.4rem;
         margin: 0rem 0rem;
+        }
     }
     .swiper .tecnologia{
-        max-height: 17.5rem;
-        padding: 1rem 1.5rem 2rem 1.5rem;
+        max-height: 19rem;
+        padding: 1rem 1.8rem 2rem 1.8rem;
     }
     .tecnologia:hover{
         max-height: 60rem;
     }
     .tecnologia img{
         margin-top: 0.5rem;
+    }
+    .tecnologia h4{
+        margin: 1rem 0 -0.6rem 0;
     }
     .tecnologia_description{
         width: 100%;
@@ -259,21 +262,24 @@
             margin-top: 2rem;
         }
     }
-    .tecnologias_slider svg{
+    .tecnologias_slider {
+        margin-top: 2.2rem;
+        svg{
         margin: 0rem 0.1rem;
+        }
     }
     .swiper .tecnologia{
-        max-height: 18rem;
+        max-height: 20rem;
         padding: 1rem 2.5rem 3rem 2.5rem;
     }
     .tecnologia:hover{
         max-height: 60rem;
     }
+    .tecnologia h4{
+        margin: 1.2rem 0 -0.4rem 0;
+    }
     .tecnologia img{
         margin-top: 0.5rem;
-    }
-    .tecnologia_description{
-        width: 100%;
     }
     #tecnologias_img_481{
         display: flex;
@@ -295,21 +301,25 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .left_tecnologias h2{
         margin-top: -5rem;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
         font-size: 2.8rem;
     }
     .tecnologias_container{
-        gap: 2rem;
+        gap: 1.5rem;
     }
     .tecnologias_description{
         width: 50%;
         font-size: 1.1rem;
+        margin-left: 0.6rem;
     }
-    .tecnologias_slider svg{
-        margin: 0rem 0.1rem;
+    .tecnologias_slider{
+        margin-top: 2rem;
+        svg{
+            margin: 0rem 0.1rem;
+        }
     }
     .swiper .tecnologia{
-        max-height: 16.5rem;
+        max-height: 18rem;
         padding: 1rem 2rem 2rem 2rem;
     }
     .tecnologia:hover{
@@ -340,7 +350,7 @@
 @media (min-width: 992px) and (max-width: 1199px) {
     .left_tecnologias h2{
         margin-top: -4rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         font-size: 3rem;
     }
     .tecnologias{
@@ -352,6 +362,18 @@
     .tecnologias_description{
         width: 50%;
         font-size: 1.1rem;
+    }
+    .tecnologias_slider{
+        margin-top: 2rem;
+        svg{
+            font-size: 2.1rem;
+        }
+    }
+    .swiper .tecnologia{
+        padding: 1rem 2.5rem 3.3rem 2.5rem;
+    }
+    .tecnologia:hover{
+        max-height: 50rem;
     }
     #tecnologias_img{
         display: flex;
@@ -370,24 +392,38 @@
     }
 }
 @media (min-width: 1200px) and (max-width: 1440px) {
-    .tecnologias{
-        gap: 8rem;
-    }
     .left_tecnologias h2{
         margin-bottom: 2rem;
+        font-size: 3.3rem;
     }
     .tecnologias_container{
         gap: 3rem;
     }
-    #tecnologias_description ul{
-        margin-top: 1.5rem;
-        gap: 2rem;
+    .tecnologias_description{
+        p{
+            font-size: 1.22rem;
+        }
     }
-    .tecnologia{
-        width: 100%;
+    .tecnologias_slider{
+        margin-top: 2.8rem;
+        svg{
+            font-size: 2.4rem;
+            margin: 0 0.8rem;
+        }
     }
-    .tecnologias_slider svg{
-        margin: 0rem 1rem;
+    .swiper .tecnologia{
+        max-height: 19.8rem;
+        padding: 1rem 2.8rem 3.3rem 2.8rem;
+    }
+    .tecnologia:hover{
+        max-height: 50rem;
+    }
+    .tecnologia h4{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+    .tecnologia_description p{
+        font-size: 1.1rem;
     }
     #tecnologias_img{
         display: flex;
@@ -405,50 +441,121 @@
     }
 }
 @media (min-width: 1441px) and (max-width: 1600px) {
-
+    .left_tecnologias h2{
+        margin-bottom: 2rem;
+        font-size: 3.3rem;
+    }
+    .tecnologias_container{
+        gap: 3rem;
+    }
+    .tecnologias_description{
+        p{
+            font-size: 1.22rem;
+        }
+    }
+    .tecnologias_slider{
+        margin-top: 2.8rem;
+        svg{
+            font-size: 2.3rem;
+            margin: 0 0.8rem;
+        }
+    }
+    .swiper .tecnologia{
+        max-height: 19.8rem;
+        padding: 1rem 2.8rem 3.3rem 2.8rem;
+    }
+    .tecnologia:hover{
+        max-height: 50rem;
+    }
+    .tecnologia h4{
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+    .tecnologia_description p{
+        font-size: 1.1rem;
+    }
+    #tecnologias_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        width: 100%;
+        height: 36rem;
+        img{
+            object-fit: cover;
+            width: 30rem;
+            height: 35rem;
+            border-radius: 80px;
+        }
+    }
 }
 @media (min-width: 1921px) and (max-width: 2560px) {
     .tecnologias{
         padding: 3rem 0rem 8rem 0rem;
-        animation-range: entry 42% cover 42%;
     }
     .left_tecnologias h2{
+        width: 55%;
         margin-top: 3rem;
         font-size: 4.8rem;
     }
-    .tecnologias_container{
+    .tecnologias_description p{
         font-size: 1.9rem;
     }
     .tecnologias_slider{
-        margin-top: 3rem;
+        margin-top: 4rem;
     }
     .tecnologias_slider svg{
-        font-size: 3.2rem;
+        font-size: 3.3rem;
     }
     .swiper .tecnologia{
-        max-height: 24rem;
+        max-height: 28rem;
+        padding: 1rem 3.5rem 3.5rem 3.5rem;
     }
     .tecnologia:hover{
-        max-height: 45rem;
+        max-height: 60rem;
     }
-    .tecnologia img{
-        width: 120px;
-        height: 143px;
-        margin-top: 1rem;
+    .tecnologia_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16rem;
+        height: 12rem;
+        margin-top: 0.4rem;
+        flex-shrink: 0;
+        flex-grow: 0;
+        img{
+            object-fit: cover;
+            border-radius: 14px;
+            width: 100%;
+            height: 100%;
+        }
     }
     .tecnologia h4{
-        font-size: 2rem;
+        font-size: 2.1rem;
+        margin-top: 1.5rem;
+        margin: 1.8rem 0 0.5rem 0;
+    }
+    .tecnologia_description p{
+        font-size: 1.58rem;
     }
     #mais{
-        font-size: 1.7rem;
-    }
-    .tecnologia_content{
-        font-size: 1.5rem;
+        font-size: 1.58rem;
+        margin-bottom: 2rem;
     }
     #mais svg{
         font-size: 1.5rem;
     }
     #tecnologias_img{
-        padding: 20rem 19.3rem;
+        display: flex;
+        justify-content: center;
+        border-radius: 12px;
+        width: 100%;
+        height: 60rem;
+        img{
+            object-fit: cover;
+            width: 50rem;
+            height: 50rem;
+            border-radius: 80px;
+        }
     }
 }

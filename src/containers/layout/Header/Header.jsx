@@ -1,76 +1,59 @@
 import { Link } from 'react-scroll';
 import { useState, useEffect, useRef } from 'react';
-import Logoheader from '../../../assets/Logoheader_11zon.webp';
+import Logoheader from '../../../../public/Logoheader_11zon.webp';
 import styles from './Header.module.css';
 import { FaAngleRight, FaBriefcase, FaGears, FaHouse, FaUsers } from 'react-icons/fa6';
-
 export function Header() {
-    
     const [activeLink, setActiveLink] = useState('inicio');
-
     const handleClick = (id) => {
         setActiveLink(id);
     };
-
     useEffect(() => {
         const handleScroll = () => {
             const sections = ['inicio', 'servicos', 'tecnologias', 'quemsomos'];
             let currentSection = '';
-
             sections.forEach((sectionId) => {
                 const section = document.getElementById(sectionId);
                 if (section) {
                     const sectionTop = section.offsetTop;
                     const sectionHeight = section.clientHeight;
                     const scrollPosition = window.scrollY + window.innerHeight / 3;
-
                     if (scrollPosition >= sectionTop && scrollPosition <= sectionTop + sectionHeight) {
                         currentSection = sectionId;
                     }
                 }
             });
-
             if (currentSection !== activeLink) {
                 setActiveLink(currentSection);
             }
         };
-
         window.addEventListener('scroll', handleScroll);
         handleScroll();
         return () => window.removeEventListener('scroll', handleScroll);
     }, [activeLink]);
-
     const [isOpen, setIsOpen] = useState(false);
-
     const handleSide = () => {
         setIsOpen(!isOpen);
     };
-
     const [navOpen, setNavOpen] = useState(false);
     const menuRef = useRef(null);
     const buttonRef = useRef(null);
-
     const handleNav = () => {
         setNavOpen(!navOpen);
     };
-
     const handleClickOutside = (event) => {
         if (menuRef.current && !menuRef.current.contains(event.target) &&
             buttonRef.current && !buttonRef.current.contains(event.target)) {
             setNavOpen(false);
         }
     };
-
     useEffect(() => {
         document.addEventListener('click', handleClickOutside);
         return () => {
             document.removeEventListener('click', handleClickOutside);
         };
     }, []);
-
-    
     const [isSticky, setIsSticky] = useState(false);
-
     const handleScroll = () => {
         const offset = window.scrollY;
         if (offset > 25) {
@@ -79,14 +62,12 @@ export function Header() {
             setIsSticky(false);
         }
     };
-
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
     return (
         <header className={`${styles.top_header} ${isOpen ? styles._open : ''} ${isSticky ? styles.sticky : ''}`}>
         <nav className={navOpen ? `${styles.nav_header} ${styles._navOpen}` : styles.nav_header}>
@@ -95,7 +76,6 @@ export function Header() {
                         <img className={styles.logo_img} src={Logoheader} alt="imagem logo" title="Laboratório NS" loading="lazy"/>
                     </a>  
                 </div>
-              
                 <div id={styles.menu_btn} onClick={handleNav} ref={buttonRef}>
                     <div className={styles.line}></div>
                     <div className={styles.line}></div>

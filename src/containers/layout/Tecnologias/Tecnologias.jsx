@@ -1,18 +1,16 @@
 import styles from './Tecnologias.module.css'
-import Logofooter from '../../../assets/Logofooter_11zon.webp'
-import Logoheader from '../../../assets/Logoheader_11zon.webp'
-import TecnologiaImg1 from '../../../assets/TecnologiaImg1_teste.jpeg'
+import Logofooter from '../../../../public/Logofooter_11zon.webp'
+import Logoheader from '../../../../public/Logoheader_11zon.webp'
+import TecnologiaImg1 from '../../../assets/TecnologiaImg1_teste_11zon.webp'
 import { FaCaretDown, FaCircleArrowLeft, FaCircleArrowRight } from 'react-icons/fa6';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-
 const tecnologias = [
   { id: 1, title: 'Protesi Dentali', vermais: 'Ver Mais', image: [TecnologiaImg1], description: 'é isso ai funcionou n sei seila pode ser talvez çlkjfaçsldfja çalskdfjaçlskdfjqpwoeiur çlaskjfpoqwieurçlaskghaçlsgh lçajsdfpoiqweuaçlskdjfçalskdf çalskfjpoqwieurçalsjfpowiaçlghal aoiewpqowigjaslçkj wioea çalskjdpqowighalk sj pwqoigjaçio aj poaiwgj jsikgja', alt: 'foto da tecnologia tal' },
   { id: 2, title: 'Ortodonzia', vermais: 'Ver Mais', image: [Logofooter], description: 'Sigillatura del canale ripulito e disinfettato', alt: 'foto da tecnologia tal' },
@@ -27,10 +25,8 @@ const tecnologias = [
   { id: 11, title: 'Ortodonzia', vermais: 'Ver Mais', image: [Logofooter], description: 'Sigillatura del canale ripulito e disinfettato', alt: 'foto da tecnologia tal' },
   { id: 12, title: 'Igiene Dentale', vermais: 'Ver Mais', image: [Logoheader], description: 'Trattamenti di igiene orale professionale.', alt: 'foto da tecnologia tal' },
 ];
-
 export function Tecnologias() {
   const boxRef = useRef(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -41,18 +37,15 @@ export function Tecnologias() {
         }
       });
     }, { threshold: 0.2 }); 
-
     if (boxRef.current) {
       observer.observe(boxRef.current);
     }
-
     return () => {
       if (boxRef.current) {
         observer.unobserve(boxRef.current);
       }
     };
   }, []);
-
     return(
         <section className={styles.tecnologias} id="tecnologias" ref={boxRef}>
                 <div className={styles.left_tecnologias}>
@@ -76,25 +69,28 @@ export function Tecnologias() {
                             slidesPerView: 2,
                             spaceBetween: 30,
                           },
-                          1441: {
+                          1550: {
                             slidesPerView: 2,
                             spaceBetween: 10,
+                          },
+                          1441: {
+                            slidesPerView: 1,
                           },
                           1200: {
                             slidesPerView: 1,
                           },
-                          992: {
-                            slidesPerView: 1,
-                          },
                           768: {
                             slidesPerView: 1,
+                          },
+                          760: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
                           },
                           481: {
                             slidesPerView: 1,
                           },
                           320: {
                             slidesPerView: 1,
-                            
                           }
                         }}
                         navigation={{ nextEl: '.button-next-slide', prevEl: '.button-prev-slide'}}

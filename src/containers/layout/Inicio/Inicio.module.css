@@ -1,12 +1,13 @@
 .inicio{
     display: flex;
     font-family: "Poppins", sans-serif;
-    gap: 10rem;
+    gap: 8rem;
     color: #fff;
 }
 #left_inicio{
     display: flex;
     flex-direction: column;
+    width: 60%;
 }
 #header_inicio{
     width: 90%;
@@ -78,15 +79,14 @@
     transform: scale(1.1);
 }
 #inicio_img{
-    height: 43rem;
-    width: 50rem;
+    height: 41rem;
+    width: 40%;
     animation: TransitionIn 1.5s;
     img{
         object-fit: cover;
         border-radius: 115px;
-        width: 42rem;
-        height: 43rem;
-        margin-top: -3rem;
+        width: 100%;
+        height: 100%;
     }
 }
 @keyframes TransitionIn {
@@ -94,7 +94,6 @@
         opacity: 0;
         transform: rotateX('-10deg');
     }
-
     to {
         opacity: 1;
         transform: rotateX('0');
@@ -129,7 +128,7 @@
         font-size: 1rem;
         p{
             margin-top: 1.5rem;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
         ul{
             flex-direction: column;
@@ -139,7 +138,7 @@
         }
         ul li a{
             gap: 1rem;
-            font-size: 1.1rem;
+            font-size: 1rem;
             svg{
                 font-size: 3rem;
             }
@@ -148,7 +147,8 @@
     .button_styled{
         margin: 1rem auto;
         width: 19rem;
-        height: 2rem;
+        height: 1.8rem;
+        font-size: 1.22rem;
     }
     #inicio_img{
         display: none;
@@ -213,12 +213,13 @@
         width: 50%;
     }
     #header_inicio{
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     #main_inicio{
         font-size: 1rem;
         p{
             margin-top: 1rem;
+            font-size: 1.1rem;
         }
         ul{
             flex-direction: column;
@@ -231,17 +232,18 @@
     }
     .button_styled{
         width: 15rem;
-        height: 2rem;
+        height: 1.9rem;
         margin-top: 1.5rem;
+        font-size: 1.2rem;
     }
     #inicio_img{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 30rem;
-        width: 100%;
-        margin-top: 10rem;
-        margin-right: 1rem;
+        width: 50%;
+        margin-top: 9rem;
+        margin-right: 2rem;
         img{
             object-fit: cover;
             width: 100%;
@@ -267,7 +269,11 @@
         }
         ul{
             gap: 1rem;
+            margin-top: 2rem;
         }
+    }
+    .button_styled{
+        margin-top: 2rem;
     }
     #inicio_img{
         display: flex;
@@ -275,8 +281,8 @@
         align-items: center;
         height: 30rem;
         width: 50%;
-        margin-top: 5rem;
-        margin-right: 3rem;
+        margin-top: 6rem;
+        margin-right: 2rem;
         img{
             object-fit: cover;
             width: 100%;
@@ -290,21 +296,28 @@
         gap: 5rem;
         padding-bottom: 8rem;
     }
+    #left_inicio{
+        width: 70%;
+    }
     #header_inicio{
         width: 80%;
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
-    #main_inicio ul{
-        gap: 3rem;
+    #main_inicio{
+        p{
+            font-size: 1.2rem;
+        }
+        ul{
+            gap: 3rem;
+        }
     }
     #inicio_img{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 33rem;
-        width: 100%;
+        width: 50%;
         margin-top: 5rem;
-        margin-right: 3rem;
         img{
             object-fit: cover;
             width: 100%;
@@ -314,7 +327,42 @@
     }
 }
 @media (min-width: 1441px) and (max-width: 1600px) {
-
+    .inicio{
+        gap: 5rem;
+        padding-bottom: 8rem;
+    }
+    #left_inicio{
+        width: 70%;
+    }
+    #header_inicio{
+        width: 80%;
+        font-size: 2.5rem;
+    }
+    #main_inicio{
+        p{
+            font-size: 1.2rem;
+        }
+        ul{
+            gap: 3rem;
+        }
+    }
+    .button_styled{
+        margin-top: 2rem;
+    }
+    #inicio_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 33rem;
+        width: 50%;
+        margin-top: 4rem;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 80px;
+        }
+    }
 }
 @media (min-width: 1921px) and (max-width: 2560px) {
     .inicio{
@@ -323,6 +371,9 @@
     #header_inicio{
         width: 67%;
         font-size: 4rem;
+    }
+    #left_inicio{
+        width: 60%;
     }
     #main_inicio{
         font-size: 1.9rem;
@@ -336,6 +387,7 @@
         gap: 1.5rem;
     }
     #main_inicio ul li svg{
+        border-radius: 12px;
         font-size: 4.5rem;
         padding: 1.2rem 1.2rem;
     }
@@ -348,6 +400,17 @@
         margin-top: 3.5rem;
     }
     #inicio_img{
-        padding: 24rem 20rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50rem;
+        width: 45%;
+        margin-top: 4rem;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 90px;
+        }
     }
 }
