@@ -83,28 +83,28 @@ export function Header() {
                 </div>
                 <ul className={styles.menu} ref={menuRef}>
                     <li title='Início'>
-                        <Link to="inicio" spy={true} smooth={true} offset={-230} duration={800} onClick={() => handleClick('inicio')} className={activeLink === 'inicio' ? styles.clicado : styles.btn}
+                        <Link to="inicio" spy={true} smooth={true} offset={-230} duration={250} onClick={() => handleClick('inicio')} className={activeLink === 'inicio' ? styles.clicado : styles.btn}
                         >
                             <FaHouse />
                             <span className={styles.item_description}>Início</span>
                         </Link>
                     </li>
                     <li title='Serviços'>
-                        <Link to="servicos" spy={true} smooth={true} offset={-120} duration={800} onClick={() => handleClick('servicos')} className={activeLink === 'servicos' ? styles.clicado : styles.btn}
+                        <Link to="servicos" spy={true} smooth={true} offset={-120} duration={250} onClick={() => handleClick('servicos')} className={activeLink === 'servicos' ? styles.clicado : styles.btn}
                         >
                             <FaBriefcase />
                             <span className={styles.item_description}>Serviços</span>
                         </Link>
                     </li>
                     <li title='Tencologias'>
-                        <Link to="tecnologias" spy={true} smooth={true} offset={-120} duration={800} onClick={() => handleClick('tecnologias')} className={activeLink === 'tecnologias' ? styles.clicado : styles.btn}
+                        <Link to="tecnologias" spy={true} smooth={true} offset={-120} duration={250} onClick={() => handleClick('tecnologias')} className={activeLink === 'tecnologias' ? styles.clicado : styles.btn}
                         >
                             <FaGears />
                             <span className={styles.item_description}>Tecnologias</span>
                         </Link>
                     </li>
                     <li title='Quem Somos'>
-                        <Link to="quemsomos" spy={true} smooth={true} offset={-120} duration={800} delay={0} onClick={() => handleClick('quemsomos')} className={activeLink === 'quemsomos' ? styles.clicado : styles.btn}
+                        <Link to="quemsomos" spy={true} smooth={true} offset={-120} duration={250} delay={0} onClick={() => handleClick('quemsomos')} className={activeLink === 'quemsomos' ? styles.clicado : styles.btn}
                         >
                             <FaUsers />
                             <span className={styles.item_description}>Quem somos?</span>
