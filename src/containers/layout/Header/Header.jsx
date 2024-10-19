@@ -45,6 +45,7 @@ export function Header() {
         if (menuRef.current && !menuRef.current.contains(event.target) &&
             buttonRef.current && !buttonRef.current.contains(event.target)) {
             setNavOpen(false);
+            setIsOpen(false);
         }
     };
     useEffect(() => {
@@ -70,7 +71,7 @@ export function Header() {
     }, []);
     return (
         <header className={`${styles.top_header} ${isOpen ? styles._open : ''} ${isSticky ? styles.sticky : ''}`}>
-        <nav className={navOpen ? `${styles.nav_header} ${styles._navOpen}` : styles.nav_header}>
+        <nav className={navOpen ? `${styles.nav_header} ${styles._navOpen}` : styles.nav_header} ref={menuRef}>
                 <div className={styles.logo}>
                     <a href="#">
                         <img className={styles.logo_img} src={Logoheader} alt="imagem logo" title="Laboratório NS" loading="lazy"/>
@@ -111,11 +112,12 @@ export function Header() {
                         </Link>
                     </li>
                 </ul>
-                <div id={styles.open_btn} onClick={handleSide}>
+                <div id={styles.open_btn} onClick={handleSide} ref={buttonRef}>
                     <FaAngleRight />
                 </div>
                 <div id={styles.background_nav}></div>
             </nav>
+            <div id={styles.hrline_grey}></div>
         </header>
     );
 }

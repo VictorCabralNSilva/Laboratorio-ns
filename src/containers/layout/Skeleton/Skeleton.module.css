@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 8rem;
+    margin-top: 7rem;
     width: 89%;
 }
 #left_skeleton{
@@ -188,11 +188,11 @@
     #logo_skeleton{
         height: 4.4rem;
         width: 4.5rem;
-        margin-top: 0.4rem 0 0 0.3rem;
+        margin: 0.4rem 0 0 0.3rem;
     }
     #nav_skeleton{
         flex-direction: column;
-        margin-top: 0.95rem 1.2rem 0 0;
+        margin: 0.95rem 1.2rem 0 0;
         li{
             width: 2.5rem;
             height: 2.8rem;
@@ -209,7 +209,7 @@
     }
     #main_skeleton{
         flex-direction: column;
-        margin-top: 0;
+        margin-top: 1.5rem;
         width: 100%;
     }
     #left_skeleton{
@@ -234,7 +234,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 95%;
+        width: 95.5%;
         height: 31.2%;
         margin: 1.5rem 0;
         border-radius: 12px;
@@ -304,11 +304,11 @@
     #logo_skeleton{
         height: 4.4rem;
         width: 4.5rem;
-        margin-top: 0.4rem 0 0 0.8rem;
+        margin: 0.4rem 0 0 0.3rem;
     }
     #nav_skeleton{
         flex-direction: column;
-        margin-top: 0.95rem 1.2rem 0 0;
+        margin: 0.95rem 1.2rem 0 0;
         gap: 0.55rem;
         li{
             width: 2.5rem;
@@ -326,7 +326,7 @@
     }
     #main_skeleton{
         flex-direction: column;
-        margin-top: 0;
+        margin-top: 2rem;
         width: 100%;
     }
     #left_skeleton{
@@ -351,8 +351,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 96.3%;
-        height: 46%;
+        width: 96.6%;
+        height: 44%;
         margin: 2rem 0;
         border-radius: 12px;
         background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
@@ -399,9 +399,9 @@
     }
     #header_skeleton{
         flex-direction: column;
-        width: 8.9%;
+        width: 5.2rem;
         background-color: rgba(185, 228, 243, 1);
-        height: 22.7rem;
+        height: 24rem;
         border-radius: 0px 18px 18px 0px;
         padding-bottom: 0.5rem;
         box-shadow: 0px 0px 10px #000;
@@ -423,7 +423,7 @@
         position: absolute;
         top: 0;
         left: 12%;
-        margin-top: 0.5rem;
+        margin-top: 3.5rem;
     }
     #left_skeleton{
         height: 35rem;
@@ -486,7 +486,7 @@
         height: 0.8rem;
     }
     #right_skeleton{
-        margin: 10rem 2.5rem 0 0 ;
+        margin: 7rem 2.5rem 0 0 ;
         height: 30rem;
         width: 45%;
         border-radius: 80px;
@@ -501,7 +501,7 @@
     }
     #header_skeleton{
         flex-direction: column;
-        width: 7.5%;
+        width: 5.2rem;
         background-color: rgba(185, 228, 243, 1);
         height: 24.8rem;
         border-radius: 0px 18px 18px 0px;
@@ -525,7 +525,7 @@
         position: absolute;
         top: 0;
         left: 9.7%;
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
     #left_skeleton{
         height: 35rem;
@@ -582,11 +582,10 @@
         width: 5rem;
     }
     #right_skeleton{
-        margin-top: 8rem;
-        height: 28rem;
+        margin: 6rem 1.5rem 0 0;
+        height: 29rem;
         width: 45%;
         border-radius: 80px;
-        margin-right: 2.3rem;
     }
 }
 @media (min-width: 1200px) and (max-width: 1440px){
@@ -603,6 +602,7 @@
         }
     }
     #main_skeleton{
+        width: 90%;
         margin-top: 4.8rem;
     }
     #left_skeleton{
@@ -611,7 +611,7 @@
     }
     #first_ul{
         margin-top: 1.3rem;
-        gap: 2.4rem;
+        gap: 1.5rem;
         li{
             height: 3.8rem;
         }
@@ -626,8 +626,8 @@
         width: 60%;
     }
     #second_ul{
-        gap: 0.7rem;
-        margin-top: 3.5rem;
+        gap: 0.6rem;
+        margin-top: 2.5rem;
         li{
             height: 0.9rem;
         }
@@ -650,7 +650,7 @@
     }
     #button_skeleton{
         width: 51.5%;
-        margin-top: 2.8rem;
+        margin-top: 2.5rem;
     }
     #third_ul{
         margin-top: 1.6rem;
@@ -662,7 +662,7 @@
     #right_skeleton{
         width: 38%;
         height: 33rem;
-        margin-top: 3rem;
+        margin: 3rem 0 0 0;
         border-radius: 80px;
     }
 }
@@ -675,13 +675,16 @@
             width: 11.5rem;
         }
     }
+    #main_skeleton{
+        width: 85%;
+    }
     #left_skeleton{
         margin-top: -2.5rem;
         width: 55%;
     }
     #first_ul{
-        margin-top: 0.5rem;
-        gap: 1.5rem;
+        margin-top: 0;
+        gap: 1.2rem;
     }
     .firsts_li:nth-child(1){
         width: 45%;
@@ -713,7 +716,7 @@
     #right_skeleton{
         width: 37.5%;
         height: 33rem;
-        margin-top: 0.8rem 3rem 0 0 ;
+        margin: 0.6rem 0 0 0 ;
         border-radius: 80px;
     }
 }
