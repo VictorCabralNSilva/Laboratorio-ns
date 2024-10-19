@@ -524,6 +524,15 @@
         width: 100%;
         align-items: flex-start;
     }
+    #hrline_grey{
+        display: flex;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        top: 4.9rem;
+        background-color: #ffffff;
+        z-index: -1;
+    }
     .menu{
         flex-direction: column;
         gap: 2rem;
