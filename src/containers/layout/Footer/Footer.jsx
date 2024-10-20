@@ -49,7 +49,7 @@ export function Footer() {
             <a id={styles.footer_instagram_li} href='https://www.instagram.com/laboratorio.ns?igsh=MTJydDQ2ajRrcWliaw==' target='_blank'><FaInstagram />Instagram</a>
           </div>
           <ul>
-            <li onClick={enviarEmail}title='Email' id={styles.email_ul}><a className={styles.links} target='_blank'><FaEnvelope /> laboratoriodeproteses.@gmail</a></li>
+            <li onClick={enviarEmail}title='Email' id={styles.email_ul}><a className={styles.links} target='_blank'><FaEnvelope /> laboratoriodeproteses.@gmail.com</a></li>
             <li title='Whatsapp'><a className={styles.links} href="https://wa.me/5521964380643?text=Ol%C3%A1%2C%20tudo%20bem%3F" target='_blank'><FaPhone /> 21 96438-0643</a></li>
             <li title='Horários'><a className={styles.links}><FaClock /> Seg-Sex 8:00-17:30</a></li>
             <li title='Local'><a href='https://maps.app.goo.gl/dPFKEzRmo1m5awCD8' className={styles.links} target='_blank'><FaLocationDot /> <div className="icon"><span>Rio de Janeiro (RJ) </span><span>Zona Sul</span></div></a></li>
@@ -81,7 +81,7 @@ export function Footer() {
         </div>
         <div id={styles.footer_logo}><img src={Logofooter} loading="lazy" alt="imagem logo" title="Laboratório NS" /></div>
       </div>
-      <p id={styles.direitos}>© 2024 Victor/Daniel - Todos os direitos reservados.</p>
+      <p id={styles.direitos}>© 2024 - Todos os direitos reservados.</p>
     </footer>
   )
 }
