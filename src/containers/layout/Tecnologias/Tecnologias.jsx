@@ -1,7 +1,6 @@
 import styles from './Tecnologias.module.css'
-import Logofooter from '../../../../public/Logofooter_11zon.webp'
-import Logoheader from '../../../../public/Logoheader_11zon.webp'
-import TecnologiaImg1 from '../../../assets/TecnologiaImg1_teste_11zon.webp'
+import TecnologiaImg1 from '../../../assets/TecnologiaImg1_teste.webp'
+import TecnologiaImg2 from '../../../assets/Impressoras 3D Anycubic 6Ks e 4Ks.webp';
 import { FaCaretDown, FaCircleArrowLeft, FaCircleArrowRight } from 'react-icons/fa6';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -12,18 +11,8 @@ import 'swiper/css/navigation';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 const tecnologias = [
-  { id: 1, title: 'Protesi Dentali', vermais: 'Ver Mais', image: [TecnologiaImg1], description: 'é isso ai funcionou n sei seila pode ser talvez çlkjfaçsldfja çalskdfjaçlskdfjqpwoeiur çlaskjfpoqwieurçlaskghaçlsgh lçajsdfpoiqweuaçlskdjfçalskdf çalskfjpoqwieurçalsjfpowiaçlghal aoiewpqowigjaslçkj wioea çalskjdpqowighalk sj pwqoigjaçio aj poaiwgj jsikgja', alt: 'foto da tecnologia tal' },
-  { id: 2, title: 'Ortodonzia', vermais: 'Ver Mais', image: [Logofooter], description: 'Sigillatura del canale ripulito e disinfettato', alt: 'foto da tecnologia tal' },
-  { id: 3, title: 'Sbiancamento', vermais: 'Ver Mais', image: [Logoheader], description: 'Pulizia professionale con strumenti manuali', alt: 'foto da tecnologia tal' },
-  { id: 4, title: 'Igiene Dentale', vermais: 'Ver Mais', image: [Logofooter], description: 'Trattamenti di igiene orale professionale.', alt: 'foto da tecnologia tal' },
-  { id: 5, title: 'Igiene Dentale', vermais: 'Ver Mais', image: [Logoheader], description: 'Trattamenti di igiene orale professionale.', alt: 'foto da tecnologia tal' },
-  { id: 6, title: 'Protesi Dentali', vermais: 'Ver Mais', image: [Logoheader], description: 'é isso ai funcionou n sei seila pode ser talvez', alt: 'foto da tecnologia tal' },
-  { id: 7, title: 'Ortodonzia', vermais: 'Ver Mais', image: [Logofooter], description: 'Sigillatura del canale ripulito e disinfettato', alt: 'foto da tecnologia tal' },
-  { id: 8, title: 'Sbiancamento', vermais: 'Ver Mais', image: [Logoheader], description: 'Pulizia professionale con strumenti manuali', alt: 'foto da tecnologia tal' },
-  { id: 9, title: 'Protesi Dentali', vermais: 'Ver Mais', image: [Logoheader], description: 'é isso ai funcionou n sei seila pode ser talvez', alt: 'foto da tecnologia tal' },
-  { id: 10, title: 'Sbiancamento', vermais: 'Ver Mais', image: [Logoheader], description: 'Pulizia professionale con strumenti manuali', alt: 'foto da tecnologia tal' },
-  { id: 11, title: 'Ortodonzia', vermais: 'Ver Mais', image: [Logofooter], description: 'Sigillatura del canale ripulito e disinfettato', alt: 'foto da tecnologia tal' },
-  { id: 12, title: 'Igiene Dentale', vermais: 'Ver Mais', image: [Logoheader], description: 'Trattamenti di igiene orale professionale.', alt: 'foto da tecnologia tal' },
+  { id: 1, title: 'Fresadora CEREC', vermais: 'Ver Mais', image: [TecnologiaImg1], description: 'Fresadora para cerâmica e zircônia, proporcionando próteses detalhadas com alta precisão em menor tempo.', alt: 'foto da tecnologia tal' },
+  { id: 2, title: 'Impressoras 3D Anycubic 6Ks e 4Ks', vermais: 'Ver Mais', image: [TecnologiaImg2], description: 'Impressoras de alta resolução para modelos e guias, otimizando o ajuste e a qualidade das próteses.', alt: 'foto da tecnologia tal' }
 ];
 export function Tecnologias() {
   const boxRef = useRef(null);
@@ -102,7 +91,7 @@ export function Tecnologias() {
                         <SwiperSlide key={tecnologia.id} className={styles.tecnologia}>
                           <div className={styles.tecnologia_img}>
                           <img src={tecnologia.image} loading="lazy" alt={tecnologia.alt} /></div>
-                          <div className={styles.tecnologia_title}>
+                          <div className={`${styles.tecnologia_title} ${tecnologia.id === 2 ? styles.tecnologia_titlealterado : ''}`}>
                           <h4>{tecnologia.title}</h4>
                           </div>
                           <div className={styles.tecnologia_description}>

@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll';
 import { useState, useEffect, useRef } from 'react';
-import Logoheader from '../../../../public/Logoheader_11zon.webp';
+import Logoheader from '../../../../public/Logoheader.webp';
 import styles from './Header.module.css';
 import { FaAngleRight, FaBriefcase, FaGears, FaHouse, FaUsers } from 'react-icons/fa6';
 export function Header() {

@@ -1,6 +1,9 @@
 import styles from "./servicos.module.css"
-import Logoheader from '../../../../public/Logoheader_11zon.webp'
-import Logofooter from '../../../../public/Logofooter_11zon.webp'
+import denteProvisorio from '../../../assets/dente-provisoria-1.webp'
+import modelosImpressos from '../../../assets/Impressao-3d.webp'
+import metalFree from '../../../assets/metal-free-1.webp'
+import protocolos from '../../../assets/Protocolo.webp'
+import metaloceramica from '../../../assets/Metaloceramica.webp'
 import { FaCaretDown, FaCircleArrowLeft, FaCircleArrowRight } from "react-icons/fa6"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -11,18 +14,11 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 const servicos = [
-  { id: 1, title: 'Protesi Dentali', vermais: 'Ver Mais', image: [Logoheader], description: 'é isso ai funcionou n sei seila pode ser talvez çlkjfaçsldfja çalskdfjaçlskdfjqpwoeiur çlaskjfpoqwieurçlaskghaçlsgh lçajsdfpoiqweuaçlskdjfçalskdf çalskfjpoqwieurçalsjfpowiaçlghal aoiewpqowigjaslçkj wioea çalskjdpqowighalk sj pwqoigjaçio aj poaiwgj jsikgja', alt: 'foto do serviço tal' },
-  { id: 2, title: 'Ortodonzia', vermais: 'Ver Mais', image: [Logofooter], description: 'Sigillatura del canale ripulito e disinfettato', alt: 'foto do serviço tal' },
-  { id: 3, title: 'Sbiancamento', vermais: 'Ver Mais', image: [Logoheader], description: 'Pulizia professionale con strumenti manuali', alt: 'foto do serviço tal' },
-  { id: 4, title: 'Igiene Dentale', vermais: 'Ver Mais', image: [Logofooter], description: 'Trattamenti di igiene orale professionale.', alt: 'foto do serviço tal' },
-  { id: 5, title: 'Igiene Dentale', vermais: 'Ver Mais', image: [Logoheader], description: 'Trattamenti di igiene orale professionale.', alt: 'foto do serviço tal' },
-  { id: 6, title: 'Protesi Dentali', vermais: 'Ver Mais', image: [Logoheader], description: 'é isso ai funcionou n sei seila pode ser talvez', alt: 'foto do serviço tal' },
-  { id: 7, title: 'Ortodonzia', vermais: 'Ver Mais', image: [Logofooter], description: 'Sigillatura del canale ripulito e disinfettato', alt: 'foto do serviço tal' },
-  { id: 8, title: 'Sbiancamento', vermais: 'Ver Mais', image: [Logoheader], description: 'Pulizia professionale con strumenti manuali', alt: 'foto do serviço tal' },
-  { id: 9, title: 'Protesi Dentali', vermais: 'Ver Mais', image: [Logoheader], description: 'é isso ai funcionou n sei seila pode ser talvez', alt: 'foto do serviço tal' },
-  { id: 10, title: 'Sbiancamento', vermais: 'Ver Mais', image: [Logoheader], description: 'Pulizia professionale con strumenti manuali', alt: 'foto do serviço tal' },
-  { id: 11, title: 'Ortodonzia', vermais: 'Ver Mais', image: [Logofooter], description: 'Sigillatura del canale ripulito e disinfettato', alt: 'foto do serviço tal' },
-  { id: 12, title: 'Igiene Dentale', vermais: 'Ver Mais', image: [Logoheader], description: 'Trattamenti di igiene orale professionale.', alt: 'foto do serviço tal' },
+  { id: 1, title: 'Dente Provisório', vermais: 'Ver Mais', image: [denteProvisorio], description: 'Provisórios em materiais biocompatíveis que protegem dentes e mantêm estética e conforto até a instalação da prótese definitiva.', alt: 'foto do serviço tal' },
+  { id: 2, title: 'Modelos Impressos', vermais: 'Ver Mais', image: [modelosImpressos], description: 'Modelos 3D de alta precisão, essenciais para visualização e planejamento odontológico preciso e ajuste personalizado de próteses.', alt: 'foto do serviço tal' },
+  { id: 3, title: 'Metal Free', vermais: 'Ver Mais', image: [metalFree], description: 'Próteses estéticas em zircônia ou porcelana, livres de metal e biocompatíveis, ideais para uma aparência natural e menor risco alérgico.', alt: 'foto do serviço tal' },
+  { id: 4, title: 'Protocolos', vermais: 'Ver Mais', image: [protocolos], description: 'Próteses fixas para reabilitações completas sobre implantes, garantindo estética e estabilidade para pacientes edêntulos.', alt: 'foto do serviço tal' },
+  { id: 5, title: 'Metalocerâmica', vermais: 'Ver Mais', image: [metaloceramica], description: 'Próteses resistentes de estrutura metálica com acabamento cerâmico, perfeitas para áreas de alta carga mastigatória.', alt: 'foto do serviço tal' }
 ];
 export function Servicos() {
   const boxRef = useRef(null);

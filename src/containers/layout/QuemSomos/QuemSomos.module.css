@@ -32,6 +32,7 @@
     transition: 0.5s;
 }
 #quemsomos1 img, #quemsomos2 img{
+    object-fit: cover;
     width: 149px;
     height: 135px;
     margin-top: -4rem;

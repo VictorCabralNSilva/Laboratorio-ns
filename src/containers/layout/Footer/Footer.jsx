@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { FaEnvelope, FaClock } from 'react-icons/fa';
 import { FaPhone, FaLocationDot, FaCircleChevronLeft, FaCircleChevronRight, FaInstagram } from 'react-icons/fa6';
-import Logofooter from '../../../../public/Logofooter_11zon.webp'
-import Logoheader from '../../../../public/Logoheader_11zon.webp'
+import Logofooter from '../../../../public/Logofooter.webp'
+import Logoheader from '../../../../public/Logoheader.webp'
 import styles from './Footer.module.css';
 const feedbacks = [
   {

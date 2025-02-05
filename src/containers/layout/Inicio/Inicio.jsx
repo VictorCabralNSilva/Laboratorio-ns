@@ -1,6 +1,6 @@
 import styles from './Inicio.module.css'
 import { FaPhone, FaLocationDot } from "react-icons/fa6"
-import ImgInicio from '../../../assets/ImgInicio_11zon.webp'
+import ImgInicio from '../../../assets/ImgInicio.webp'
 export function Inicio() {
     return(
         <section className={styles.inicio} id="inicio">

@@ -1,6 +1,6 @@
 import styles from './QuemSomos.module.css'
-import Logofooter from '../../../../public/Logofooter_11zon.webp'
-import Logoheader from '../../../../public/Logoheader_11zon.webp'
+import Logofooter from '../../../assets/foto-andre.webp'
+import Logoheader from '../../../assets/foto-lucas.webp'
 import { FaInstagram, FaLinkedinIn } from 'react-icons/fa6'
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
@@ -30,7 +30,9 @@ export function QuemSomos() {
                 <h2>Quem somos?</h2>
                 <div id={styles.quemsomos_content}>
                     <article id={styles.quemsomos1}>
-                      <img src={Logofooter} alt="Andre Nascimento" loading="lazy" />
+                     <div className={styles.qs_img}>
+                      <img src={Logofooter} alt="Andre Nascimento" loading="lazy"/>
+                     </div>
                       <h4>Andre Nascimento</h4>
                       <p id={styles.quemsomos1_description}>
                         Chirurgo dentale 
@@ -43,7 +45,9 @@ export function QuemSomos() {
                       </div>
                     </article>
                     <article id={styles.quemsomos2}>
-                      <img src={Logoheader} alt="Lucas Soares" loading="lazy" />
+                    <div className={styles.qs_img}>
+                      <img src={Logoheader} alt="Andre Nascimento" loading="lazy"/>
+                    </div>
                       <h4>Lucas Soares</h4>
                       <p id={styles.quemsomos2_description}>
                         Odontotecnico
