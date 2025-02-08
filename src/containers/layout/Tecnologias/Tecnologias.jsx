@@ -11,8 +11,8 @@ import 'swiper/css/navigation';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 const tecnologias = [
-  { id: 1, title: 'Fresadora CEREC', vermais: 'Ver Mais', image: [TecnologiaImg1], description: 'Fresadora para cerâmica e zircônia, proporcionando próteses detalhadas com alta precisão em menor tempo.', alt: 'foto da tecnologia tal' },
-  { id: 2, title: 'Impressoras 3D Anycubic 6Ks e 4Ks', vermais: 'Ver Mais', image: [TecnologiaImg2], description: 'Impressoras de alta resolução para modelos e guias, otimizando o ajuste e a qualidade das próteses.', alt: 'foto da tecnologia tal' }
+  { id: 1, title: 'Fresadora CEREC', vermais: 'Ver Mais', /*image: [TecnologiaImg1],*/ description: 'Fresadora para cerâmica e zircônia, proporcionando próteses detalhadas com alta precisão em menor tempo.', alt: 'foto da tecnologia tal' },
+  { id: 2, title: 'Impressoras 3D Anycubic 6Ks e 4Ks', vermais: 'Ver Mais', /*image: [TecnologiaImg2],*/ description: 'Impressoras de alta resolução para modelos e guias, otimizando o ajuste e a qualidade das próteses.', alt: 'foto da tecnologia tal' }
 ];
 export function Tecnologias() {
   const boxRef = useRef(null);
@@ -89,13 +89,13 @@ export function Tecnologias() {
                         <div className={styles.tecnologias_content}>
                         {tecnologias.map((tecnologia) => (
                         <SwiperSlide key={tecnologia.id} className={styles.tecnologia}>
-                          <div className={styles.tecnologia_img}>
-                          <img src={tecnologia.image} loading="lazy" alt={tecnologia.alt} /></div>
+                          {/*<div className={styles.tecnologia_img}>
+                          <img src={tecnologia.image} loading="lazy" alt={tecnologia.alt} /></div>*/}
                           <div className={`${styles.tecnologia_title} ${tecnologia.id === 2 ? styles.tecnologia_titlealterado : ''}`}>
                           <h4>{tecnologia.title}</h4>
                           </div>
                           <div className={styles.tecnologia_description}>
-                            <p id={styles.mais}>{tecnologia.vermais}<FaCaretDown /></p>
+                            {/*<p id={styles.mais}>{tecnologia.vermais}<FaCaretDown /></p>*/}
                             <p className={styles.tecnologia_content}>{tecnologia.description}</p> 
                           </div>
                         </SwiperSlide> 

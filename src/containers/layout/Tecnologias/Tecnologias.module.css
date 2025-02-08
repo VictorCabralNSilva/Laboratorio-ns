@@ -71,7 +71,7 @@
 .swiper .tecnologia{
     background-color: #FFFFFF;
     width: 15rem;
-    max-height: 19rem;
+    height: 14rem;
     border-radius: 45px;
     display: flex;
     flex-direction: column;
@@ -124,10 +124,21 @@
 }
 @keyframes SlideIn {
     0% {
-        transform: translateX(110%);
+        transform: translateX(90%);
+        opacity: 0;
+    }
+    5%{
+        opacity: 1;
+    }
+    94%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 0.5;
     }
     100% {
-        transform: translateX(-150%);
+        transform: translateX(-120%);
+        opacity: 0;
     }
 }
 .tecnologia_description{
@@ -458,6 +469,25 @@
             width: 30rem;
             height: 35rem;
             border-radius: 80px;
+        }
+    }
+    @keyframes SlideIn {
+        0% {
+            transform: translateX(90%);
+            opacity: 0;
+        }
+        5%{
+            opacity: 1;
+        }
+        94%{
+            opacity: 1;
+        }
+        95%{
+            opacity: 0.5;
+        }
+        100% {
+            transform: translateX(-85%);
+            opacity: 0;
         }
     }
 }
