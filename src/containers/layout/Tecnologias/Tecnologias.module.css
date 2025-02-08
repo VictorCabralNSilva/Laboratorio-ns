@@ -84,11 +84,11 @@
     padding: 1.5rem 3rem 2.5rem 3rem;
     transition: max-height 0.6s ease, background-color 0.6s ease, border-color 0.6s ease;
 }
-.tecnologia:hover{
+/*.tecnologia:hover{
     max-height: 40rem;
     background-color: #000000;
     border: 1px solid #ffffff;
-}
+}*/
 .tecnologia_img{
     display: flex;
     justify-content: center;
@@ -178,7 +178,7 @@
         border-radius: 100px;
     }
 }
-.tecnologia:hover h4{
+/*.tecnologia:hover h4{
     color: #01CFC9;
 }
 .tecnologia:hover .tecnologia_content{
@@ -193,7 +193,7 @@
 .tecnologia:hover #mais svg{
     color: #FFFFFF;
     transform: rotate(-180deg);
-}
+}*/
 .swiper {
     width: 100%;
     transition: 0.5s;
